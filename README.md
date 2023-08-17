@@ -364,8 +364,6 @@ Then click `Create Repository`.
 </details>
 
 
-TEST
-
 <details>
   <summary>Adding The AI Makerspace Your First LLM Content to Your Repo</summary>
 
