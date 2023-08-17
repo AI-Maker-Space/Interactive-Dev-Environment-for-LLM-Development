@@ -190,22 +190,22 @@ After running the commands from the table, when prompted, initiate your conda ba
 
   IntelliCode is an AI-powered code completion extension to boost coding productivity. :sunglasses:
 
-  1. Click the `Extensions` <img src="images/vscode_extensions_tab.png" width=30px/> tab in the navigation panel on the left side of VS Code. 
+  1. Click the `Extensions` <img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/f17d8f45-f174-4b9b-be92-8f1e85d8a77b" width=30px/> tab in the navigation panel on the left side of VS Code. 
 
   2. Type "IntelliCode" in the search bar.
 
-  3. Click `install` <img src="images/vscode_install.png" width=30px/> on the <ins><strong>Microsoft IntelliCode Extension</strong></ins>
+  3. Click `install` <img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/4c06f2a7-d7c3-4c59-b656-82170518cbeb" width=30px/> on the <ins><strong>Microsoft IntelliCode Extension</strong></ins>
 
 </details>
 
 <details>
   <summary>Install the Python and Jupyter Notebook Extensions</summary>
 
-  1. Click the `Extensions` <img src="images/vscode_extensions_tab.png" width=30px/> tab on the left side of the window.
+  1. Click the `Extensions` <img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/f17d8f45-f174-4b9b-be92-8f1e85d8a77b" width=30px/> tab on the left side of the window.
 
   2. Type "Python" in the search bar.
 
-  3. Click `Install` <img src="images/vscode_install.png" width=30px/>  on both the <ins><strong>Python Extension</strong></ins> and on the <ins><strong>Microsoft Jupyter Notebook Extension</strong></ins>
+  3. Click `Install` <img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/4c06f2a7-d7c3-4c59-b656-82170518cbeb" width=30px/>  on both the <ins><strong>Python Extension</strong></ins> and on the <ins><strong>Microsoft Jupyter Notebook Extension</strong></ins>
 
 </details>
 
@@ -231,7 +231,7 @@ After running the commands from the table, when prompted, initiate your conda ba
   8. Select the `Conda` environment that you installed earlier. 
   
   <p align = "center" draggable=”false”>
-  <img src="images/vscode_ Your First LLM_interpreter.png"> 
+  <img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/d95ff119-2c97-4bf8-9133-1bf167f61f6e"> 
   </p>
 
   9. Now you're ready to start coding!
@@ -272,16 +272,19 @@ If you don't already have one, make an account on [Github](https://github.com/)!
   
   6. Under `Access`, click on the `SSH and GPG keys` tab on the left.
 
-  ![Access Section](images/github_access_section.png)
+  ![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/5fb54f16-7279-49c4-bda3-2da36cbbc306)
+
 
   7. Click on the `New SSH Key` button.
   
-  ![New SSH Key](images/github_new_ssh_key.png)
+  ![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/d5551c28-9d70-438c-b45d-43698384e3ff)
+
   
   8. Name the key, and paste the public key that you copied. Click the `Add SSH Key` button
   
 
-  ![Add SSH Key](images/github_add_ssh_key.png)
+  ![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/8f7c4496-0e88-4058-9baf-73495322db8b)
+
 
 </details>
 
