@@ -59,6 +59,8 @@ Some commands we will use in this lesson when it comes to `conda` and `pip`:
 `conda activate llmops-course` -> This activates the virtual environment you made with the above command for your current terminal session.
 
 `pip install numpy pandas matplotlib jupyter` -> This installs the four packages mentioned - `numpy`, `pandas`, `jupyter` and `matplotlib`. `numpy` is used for scientific computing, `pandas` is used for data analysis, and `matplotlib` is used for data graphics. `jupyter` is discussed later in this tutorial in depth! `pip` is the Python package manager and you are telling it to `install` the listed packages to your environment.
+
+`pip install openai` -> This installs the OpenAI packages so you can access the OpenAI API using your API Key. We recommend your run through our [OpenAI Notebook](https://colab.research.google.com/drive/16Y67VozkGVErtrF3WQArpM52AOk5pBGu?usp=sharing#scrollTo=3qCKaH6vD-jZ) to learn how to utilize the OpenAI API.
 </details>
 
 <p></p>
