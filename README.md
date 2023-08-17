@@ -291,10 +291,10 @@ If you don't already have one, make an account on [Github](https://github.com/)!
 <details>
   <summary>Viewing the Repositories</summary>
 
-Login and click on the top right user icon, then go to `repositories`. 
+Login and click on the top right user icon, then go to `Your repositories`. 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/37101144/162326947-3bfb4451-9854-41e8-9014-a02ed1322d66.png">
+  <img width="648" alt="image" src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/18b766c6-ca91-4926-ad79-5fc101c3e6a0">
 </p>
 </details>
 
@@ -304,8 +304,9 @@ Login and click on the top right user icon, then go to `repositories`.
 
 When viewing the respository page, click on `New` and proceed to create your repo.
 
+
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/37101144/162327218-e1429ab2-2b24-4822-95bf-4411c2eb4a84.png">
+  <img width="335" alt="image" src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/dba31b88-0058-499c-a891-349de2d35279">
 </p>
 <hr>
 
