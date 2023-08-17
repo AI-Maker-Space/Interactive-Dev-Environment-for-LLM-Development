@@ -371,7 +371,7 @@ Then click `Create Repository`.
 
 
 <details>
-  <summary>Adding The AI Makerspace Your First LLM Content to Your Repo</summary>
+  <summary>Adding The AI Makerspace Build Your-Own RAQA System Content to Your Repo</summary>
 
   1. `cd` into your repo and check your remote git. 
 
@@ -428,10 +428,10 @@ Then click `Create Repository`.
   ```
 
 
-5. Add the `Your First LLM` (YFL) repo as an extra remote repo:
+5. Add the `Build Your-Own RAQA System` (YFL) repo as an extra remote repo:
 
   ```console
-  git remote add YFL git@github.com:AI-Maker-Space/Your-First-LLM.git
+  git remote add YFL git@github.com:AI-Maker-Space/LangChain-Concepts-101---Build-Your-Own-RAQA-System.git
   ```
 
   Let's check our remote repos:
@@ -443,8 +443,8 @@ Then click `Create Repository`.
   At this point, you should have access to both your own repo and AI Makerspace and should see something like this:
 
   ```console
-  YFL    git@github.com:AI-Maker-Space/Your-First-LLM.git (fetch)
-  YFL    git@github.com:AI-Maker-Space/Your-First-LLM.git (push)
+  YFL    git@github.com:AI-Maker-Space/LangChain-Concepts-101---Build-Your-Own-RAQA-System.git (fetch)
+  YFL    git@github.com:AI-Maker-Space/LangChain-Concepts-101---Build-Your-Own-RAQA-System.git (push)
   origin git@github.com:ai-kadhim/TestRepo.git (fetch)
   origin git@github.com:ai-kadhim/TestRepo.git (push)
   ```
@@ -455,7 +455,7 @@ Then click `Create Repository`.
   git fetch --all
   ```
 
-  Make a new branch for the `Your First LLM` material (YFLBranch).
+  Make a new branch for the `Build Your-Own RAQA System` material (YFLBranch).
   ```console
   git checkout --track -b YFLBranch YFL/main
   ```
@@ -545,7 +545,7 @@ Then click `Create Repository`.
   <summary>Hello World! - Part 1</summary>
   1. Next we will review some terminal commands and make some     additions to our repo.  Do these in your terminal where your     current working directory is your repo.
 
-  * Check your current working directory: `pYFL` 
+  * Check your current working directory: `pwd` 
 
   * Create a new file: `touch hello_world.py`
 
