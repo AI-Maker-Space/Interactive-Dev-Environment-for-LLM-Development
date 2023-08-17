@@ -323,7 +323,7 @@ Create the repository by inputting the following:
 Then click `Create Repository`.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/37101144/162327471-262a0931-c188-4976-8185-e70c4d108f71.png">
+  <img width="724" alt="image" src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/c20a19c1-548e-4576-b4b2-1d2ca99deae7">
 </p>
 
 </details>
