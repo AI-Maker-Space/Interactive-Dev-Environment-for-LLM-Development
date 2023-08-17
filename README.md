@@ -1,7 +1,8 @@
-<p align = "center" draggable=”false” ><img src="https://github.com/FourthBrain/software-dev-for-mlops-101/assets/37101144/08608742-5985-4c4c-a5b5-c549035b7dd0" 
+<p align = "center" draggable=”false” ><img src="https://github.com/AI-Maker-Space/LLM-Dev-101/assets/37101144/d1343317-fa2f-41e1-8af1-1dbb18399719" 
      width="200px"
      height="auto"/>
 </p>
+
 
 ## <h1 align="center" id="heading">:wave: Welcome to Software Development for LLMOps 101!!</h1>
 
