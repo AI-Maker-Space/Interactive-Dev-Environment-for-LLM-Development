@@ -6,7 +6,7 @@
 
 ## <h1 align="center" id="heading">:wave: Welcome to Software Development for LLMOps 101!!</h1>
 
-Welcome to the beginning of your journey to becoming an LLM Operations (LLMOps) Engineer! 🎉 Follow these steps to get your development environment teed up! After you've finished this set-up, you'll have the tools you need to build, ship, and share! 🏗️🚢🚀
+Welcome to the beginning of your journey to becoming an LLM Operations (LLMOps) Engineer! 🎉 Follow these steps to get your development environment teed up! After you've finished this set-up, feel free to go through the associated `Whodunit?`! 🕵️‍♀️
 
 
 ## :books: Quick Review
@@ -371,6 +371,151 @@ Then click `Create Repository`.
 
 
 <details>
+  <summary>Adding The AI Makerspace Whodunit? Content to Your Repo</summary>
+
+  1. `cd` into your repo and check your remote git. 
+
+  ```console
+  cd {your repo name}
+  ```
+
+  ```console
+  git remote -v
+  ```
+
+  At this point, you should just have access to your own repo with an origin branch with both fetch and push options.
+
+  2. Let's setup our global configuration:
+
+  ```console
+  git config --global user.email "your email address"
+  ```
+
+  ```console
+  git config --global user.name "your name"
+  ```
+
+  3. Let's add a local branch for development.
+
+  ```console
+  git checkout -b LocalDev
+  ```
+
+  You can change anything here in this branch!
+
+  ```console
+  git add .
+  ```
+
+  Commit the changes with the branch addition.
+
+  ```console
+  git commit -m "Adding a LocalDev branch."
+  ```
+
+  4. Let's push our local changes to our remote repo.
+
+  ```console
+  git checkout main
+  ```
+
+  ```console
+  git merge LocalDev
+  ```
+
+  ```console
+  git push origin main
+  ```
+
+
+5. Add the Whodunit (WD) repo as an extra remote repo:
+
+  ```console
+  git remote add WD git@github.com:AI-Maker-Space/whodunit.git
+  ```
+
+  Let's check our remote repos:
+
+  ```console
+  git remote -v
+  ```
+
+  At this point, you should have access to both your own repo and FourthBrain and should see something like this:
+
+  ```console
+  WD    git@github.com:FourthBrain/whodunit.git (fetch)
+  WD    git@github.com:FourthBrain/whodunit.git (push)
+  origin git@github.com:rafatisina/TestRepo.git (fetch)
+  origin git@github.com:rafatisina/TestRepo.git (push)
+  ```
+
+  Let's update our local repos:
+
+  ```console
+  git fetch --all
+  ```
+
+  Make a new branch for the Whodunit material (WDBranch).
+  ```console
+  git checkout --track -b WDBranch WD/main
+  ```
+  
+  You should see something like this:
+  
+  ```console
+  Branch 'WDBranch' set up to track remote branch 'main' from 'WD'.
+  ```
+
+  You can visually check whether you are in that branch:
+
+  ```console
+  git log --all --graph
+  ```
+
+  Now let's push our updated local repo to our remote repo!
+
+  ```console
+  git checkout main
+  ```
+
+  ```console
+  git merge WDBranch --allow-unrelated-histories
+  ```
+
+  If there are any conflicts you'll need to resolve them.
+  ```console
+  git add .
+  ```
+  
+  ```console
+  git commit -m "message-here"
+  ```
+  
+  ```console
+  git push origin main
+  ```
+
+  From now on... after each release follow these steps to update your repo with new content:
+  ```console
+  git fetch --all
+  git checkout WDBranch
+  git merge --ff-only @{u}
+  git add .
+  git commit -m "branch is updated"
+  git checkout main
+  git merge WDBranch --allow-unrelated-histories
+  ```
+
+  You will be asked to add a comment about why this change is necessary --> add a message.
+  
+  ```console
+  git push origin main
+  ```
+</details>
+
+<p></p>
+
+<details>
   <summary>Adding The AI Makerspace Build Your-Own RAQA System Content to Your Repo</summary>
 
   1. `cd` into your repo and check your remote git. 
@@ -627,5 +772,11 @@ Then click `Create Repository`.
   
 </details>
 
+# :detective: Whodunit? 
+Now let's practice  what you have learned by playing the [Whodunit?](https://github.com/AI-Maker-Space/whodunit) game!
 
+# 🤖 Build Your own RAQA!
+Are you ready? Let's get to building your [first LLM](https://github.com/AI-Maker-Space/LangChain-Concepts-101---Build-Your-Own-RAQA-System)!
+
+### That's it for now!  And so it begins.... :)
 <p></p>
