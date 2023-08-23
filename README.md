@@ -442,13 +442,13 @@ Then click `Create Repository`.
   git remote -v
   ```
 
-  At this point, you should have access to both your own repo and FourthBrain and should see something like this:
+  At this point, you should have access to both your own repo and the AI Maker Space repo and should see something like this:
 
   ```console
-  WD    git@github.com:FourthBrain/whodunit.git (fetch)
-  WD    git@github.com:FourthBrain/whodunit.git (push)
-  origin git@github.com:rafatisina/TestRepo.git (fetch)
-  origin git@github.com:rafatisina/TestRepo.git (push)
+  WD    git@github.com:AI-Maker-Space/whodunit.git (fetch)
+  WD    git@github.com:AI-Maker-Space/whodunit.git (push)
+  origin git@github.com:ai-kadhim/TestRepo.git (fetch)
+  origin git@github.com:ai-kadhim/TestRepo.git (push)
   ```
 
   Let's update our local repos:
