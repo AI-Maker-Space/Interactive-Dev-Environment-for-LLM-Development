@@ -774,14 +774,14 @@ Then click `Create Repository`.
   
 </details>
 
+# 🤖 Build Your Own RAQA!
+Are you ready? Let's get to building your [first LLM](https://github.com/AI-Maker-Space/LangChain-Concepts-101---Build-Your-Own-RAQA-System)!
+
 # :detective: Whodunit? 
 Now let's practice  what you have learned by playing the [Whodunit?](https://github.com/AI-Maker-Space/whodunit) game!
 
 # ⛓️ Get Your Chain Game!
 It's time to put the Chain in Langchain. Let's [get started](https://colab.research.google.com/drive/1CAE_gdSQlcDsXGc6YbL1GAnnlZPZuE3b?usp=sharing).
-
-# 🤖 Build Your Own RAQA!
-Are you ready? Let's get to building your [first LLM](https://github.com/AI-Maker-Space/LangChain-Concepts-101---Build-Your-Own-RAQA-System)!
 
 ### That's it for now!  And so it begins.... :)
 <p></p>
