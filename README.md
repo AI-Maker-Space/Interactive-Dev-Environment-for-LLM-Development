@@ -779,9 +779,9 @@ Now let's practice  what you have learned by playing the [Whodunit?](https://git
 
 
 # 🤖 Build Your Own RAQA!
-Are you ready? Let's get to building your [first LLM](https://github.com/AI-Maker-Space/LangChain-Concepts-101---Build-Your-Own-RAQA-System)!
+Are you ready? Let's get to building your [first retrieval-augmented question answering application](https://github.com/AI-Maker-Space/LangChain-Concepts-101---Build-Your-Own-RAQA-System)!
 
-# ⛓️ Get Your Chain Game!
+# ⛓️ Get Your Chain Game On!
 It's time to put the Chain in Langchain. Let's [get started](https://colab.research.google.com/drive/1CAE_gdSQlcDsXGc6YbL1GAnnlZPZuE3b?usp=sharing).
 
 ### That's it for now!  And so it begins.... :)
