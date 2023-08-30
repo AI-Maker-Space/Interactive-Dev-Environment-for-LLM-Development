@@ -828,6 +828,12 @@ After logging in, press `y` to add the token to credentials for git.
 </details>
 
 
+pip install huggingface-hub
+pip install chainlit
+pip install langchain
+
+
+Install docker
 
 
 
