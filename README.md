@@ -828,7 +828,7 @@ After logging in, press `y` to add the token to credentials for git.
 </details>
 
 
-pip install huggingface-hub
+pip install huggingface_hub
 pip install chainlit
 pip install langchain
 
