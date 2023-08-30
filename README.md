@@ -812,7 +812,7 @@ Navigate to [Token settings](https://huggingface.co/settings/tokens) and click o
 Name your access token, change the role to write, and click `Generate a token`
 ![Screenshot 2023-08-29 at 6 16 58 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/b9ae1590-1541-497d-a54a-1188438844b8)
 
-Copy the token and save it for later use. We will use this token several times in deploying projects. Please do not lose this token or you will need to generate a new one
+Copy the token and save it for later use. We will use this token several times in deploying projects. If you lose this token, you can always go back to your token's page and view the token.
 
 ![Screenshot 2023-08-29 at 6 17 29 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/5fa285fa-d2ef-4308-b713-fb7384a53516)
 
