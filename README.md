@@ -809,6 +809,16 @@ Name your access token, change the role to write, and click `Generate a token`
 
 Copy the token and save it for later use. We will use this token several times in deploying projects. Please do not lose this token or you will need to generate a new one
 ![Screenshot 2023-08-29 at 6 17 29 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/5fa285fa-d2ef-4308-b713-fb7384a53516)
+
+Login to Huggingface using your terminal
+``` bash
+huggingface-cli login
+```
+![Screenshot 2023-08-29 at 6 13 23 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/31727145-8451-48bd-a560-9d92a8d4af3a)
+
+After logging in, press `y` to add the token to credentials for git.
+![Screenshot 2023-08-29 at 6 18 13 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/5215d7eb-7a40-4e50-acf1-a5b7c5186a54)
+
 </details>
 
 
