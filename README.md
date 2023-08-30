@@ -785,7 +785,12 @@ It's time to put the Chain in Langchain. Let's [build your first LLM App](https:
 
 
 
-Generating an OpenAI API key
+
+
+<details>
+  <summary>Generating an OpenAI API key</summary>
+Create an account with OpenAI [here](https://platform.openai.com/signup) if you do not have one.
+     
 Navigate to [OpenAI's API Developer settings](https://platform.openai.com/account/api-keys) and click on `+ Create new secrete key`.
 ![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/b6179d51-76ac-42a8-8304-39f8b5c9a8c8)
 
@@ -794,6 +799,25 @@ Name your key and click `Create secret key`
 
 Copy the key and save it for later use. We will use this key several times in deploying projects. Please do not lose this key or you will need to generate a new one
 ![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/cfaec5fa-5380-4aca-a6ae-6c14c8db6789)
+
+<details>
+
+
+<details>
+  <summary>Generating a Huggingface Token</summary>
+Create an account with Huggingface [here]([https://platform.openai.com/signup](https://huggingface.co/join) if you do not have one.
+
+Navigate to [Token settings](https://huggingface.co/settings/tokens) and click on `New token`.
+![Screenshot 2023-08-29 at 6 16 12 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/8ec271de-4cb2-44b0-b6f8-ea354e2c42c2)
+
+Name your access token, change the role to write, and click `Generate a token`
+![Screenshot 2023-08-29 at 6 16 58 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/b9ae1590-1541-497d-a54a-1188438844b8)
+
+Copy the token and save it for later use. We will use this token several times in deploying projects. Please do not lose this token or you will need to generate a new one
+![Screenshot 2023-08-29 at 6 17 29 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/5fa285fa-d2ef-4308-b713-fb7384a53516)
+
+<details>
+
 
 
 
