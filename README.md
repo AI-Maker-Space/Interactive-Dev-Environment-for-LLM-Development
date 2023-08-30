@@ -776,9 +776,9 @@ Then click `Create Repository`.
 
 
 
-## 🤖 Your own LLM App!
+## 🤖 Your First LLM App
 <details>
-  <summary>🤖 Building Your LLM App!</summary>
+  <summary>🤖 Building Your First LLM App</summary>
 
      
 Are you ready? 
@@ -838,7 +838,7 @@ Great! Time to ship!
 
 
 <details>
-  <summary>🚀 Deploying Your LLM App!</summary>
+  <summary>🚀 Deploying Your First LLM App</summary>
 
 Make sure you're logged into Huggingface Spaces CLI
 
