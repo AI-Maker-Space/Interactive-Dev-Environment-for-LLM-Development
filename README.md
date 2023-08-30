@@ -774,10 +774,6 @@ Then click `Create Repository`.
   
 </details>
 
-# :detective: Whodunit? 
-Now let's practice  what you have learned by playing the [Whodunit?](https://github.com/AI-Maker-Space/whodunit) game!
-
-
 # 🤖 Build Your Own RAQA!
 Are you ready? Let's get to building your [first retrieval-augmented question answering application](https://github.com/AI-Maker-Space/LangChain-Concepts-101---Build-Your-Own-RAQA-System)!
 
@@ -786,3 +782,21 @@ It's time to put the Chain in Langchain. Let's [build your first LLM App](https:
 
 ### That's it for now!  And so it begins.... :)
 <p></p>
+
+
+
+Generating an OpenAI API key
+Navigate to [OpenAI's API Developer settings](https://platform.openai.com/account/api-keys) and click on `+ Create new secrete key`.
+![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/b6179d51-76ac-42a8-8304-39f8b5c9a8c8)
+
+Name your key and click `Create secret key`
+![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/be0ea05f-59d3-4d20-939d-b402e3d4bbb2)
+
+Copy the key and save it for later use. We will use this key several times in deploying projects. Please do not lose this key or you will need to generate a new one
+![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/cfaec5fa-5380-4aca-a6ae-6c14c8db6789)
+
+
+
+
+
+
