@@ -916,7 +916,7 @@ Then click `Create Repository`.
 
 
 
-## Your First LLM App
+## 🤖 Your First LLM App
 
 In this section, we'll walk you through the steps to create a Large Language Model (LLM) application using Chainlit, then containerize it using Docker, and finally deploy it on Huggingface Spaces.
 
