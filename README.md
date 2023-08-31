@@ -60,7 +60,7 @@ Some commands we will use in this lesson when it comes to `conda` and `pip`:
 
 `conda activate llmops-course` -> This activates the virtual environment you made with the above command for your current terminal session.
 
-`pip install numpy pandas matplotlib jupyter openai huggingface_hub` -> This installs the five packages mentioned - `numpy`, `pandas`, `jupyter`, `matplotlib`, and `openai`. `numpy` is used for scientific computing, `pandas` is used for data analysis, `matplotlib` is used for data graphics. `jupyter` is discussed later in this tutorial in depth! `openai` is used to access OpenAI's GPT models through an API key. `huggingface_hub` is used to push our code and models to Huggingface and host it in a Huggingface Space. `pip` is the Python package manager and you are telling it to `install` the listed packages to your environment.
+`pip install numpy pandas matplotlib jupyter openai huggingface_hub` -> This installs the six packages mentioned - `numpy`, `pandas`, `jupyter`, `matplotlib`, and `openai`. `numpy` is used for scientific computing, `pandas` is used for data analysis, `matplotlib` is used for data graphics. `jupyter` is discussed later in this tutorial in depth! `openai` is used to access OpenAI's GPT models through an API key. `huggingface_hub` is used to push our code and models to Huggingface and host it in a Huggingface Space. `pip` is the Python package manager and you are telling it to `install` the listed packages to your environment.
 
 </details>
 
