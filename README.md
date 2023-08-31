@@ -997,7 +997,6 @@ huggingface-cli login
 
 2. Follow the prompts to authenticate.
 
-
 Deploy to Huggingface Spaces
 
 1. Let's create a new Huggingface Space. Navigate to Huggingface.co and click on your profile picture on the top right. Then click on `New Space`.
