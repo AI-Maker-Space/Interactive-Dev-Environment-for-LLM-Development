@@ -513,7 +513,7 @@ Then click `Create Repository`.
 
 
 <details>
-  <summary>Adding The AI Makerspace Whodunit? Content to Your Repo</summary>
+  <summary>Adding The AI Makerspace Beyond-ChatGPT Content to Your Repo</summary>
 
   1. `cd` into your repo and check your remote git. 
 
@@ -570,10 +570,10 @@ Then click `Create Repository`.
   ```
 
 
-5. Add the Whodunit (WD) repo as an extra remote repo:
+5. Add the Beyond-ChatGPT (BC) repo as an extra remote repo:
 
   ```console
-  git remote add WD git@github.com:AI-Maker-Space/whodunit.git
+  git remote add BC git@github.com:AI-Maker-Space/Beyond-ChatGPT.git
   ```
 
   Let's check our remote repos:
@@ -585,8 +585,8 @@ Then click `Create Repository`.
   At this point, you should have access to both your own repo and the AI Maker Space repo and should see something like this:
 
   ```console
-  WD    git@github.com:AI-Maker-Space/whodunit.git (fetch)
-  WD    git@github.com:AI-Maker-Space/whodunit.git (push)
+  BC    git@github.com:AI-Maker-Space/Beyond-ChatGPT.git (fetch)
+  BC    git@github.com:AI-Maker-Space/Beyond-ChatGPT.git (push)
   origin git@github.com:ai-kadhim/TestRepo.git (fetch)
   origin git@github.com:ai-kadhim/TestRepo.git (push)
   ```
@@ -597,15 +597,15 @@ Then click `Create Repository`.
   git fetch --all
   ```
 
-  Make a new branch for the Whodunit material (WDBranch).
+  Make a new branch for the Beyond-ChatGPT material (BCBranch).
   ```console
-  git checkout --track -b WDBranch WD/main
+  git checkout --track -b BCBranch BC/main
   ```
   
   You should see something like this:
   
   ```console
-  Branch 'WDBranch' set up to track remote branch 'main' from 'WD'.
+  Branch 'BCBranch' set up to track remote branch 'main' from 'BC'.
   ```
 
   You can visually check whether you are in that branch:
@@ -621,7 +621,7 @@ Then click `Create Repository`.
   ```
 
   ```console
-  git merge WDBranch --allow-unrelated-histories
+  git merge BCBranch --allow-unrelated-histories
   ```
 
   If there are any conflicts you'll need to resolve them.
@@ -640,157 +640,12 @@ Then click `Create Repository`.
   From now on... after each release follow these steps to update your repo with new content:
   ```console
   git fetch --all
-  git checkout WDBranch
+  git checkout BCBranch
   git merge --ff-only @{u}
   git add .
   git commit -m "branch is updated"
   git checkout main
-  git merge WDBranch --allow-unrelated-histories
-  ```
-
-  You will be asked to add a comment about why this change is necessary --> add a message.
-  
-  ```console
-  git push origin main
-  ```
-</details>
-
-<p></p>
-
-<details>
-  <summary>Adding The AI Makerspace Build Your-Own RAQA System Content to Your Repo</summary>
-
-  1. `cd` into your repo and check your remote git. 
-
-  ```console
-  cd {your repo name}
-  ```
-
-  ```console
-  git remote -v
-  ```
-
-  At this point, you should just have access to your own repo with an origin branch with both fetch and push options.
-
-  2. Let's setup our global configuration:
-
-  ```console
-  git config --global user.email "your email address"
-  ```
-
-  ```console
-  git config --global user.name "your name"
-  ```
-
-  3. Let's add a local branch for development.
-
-  ```console
-  git checkout -b LocalDev
-  ```
-
-  You can change anything here in this branch!
-
-  ```console
-  git add .
-  ```
-
-  Commit the changes with the branch addition.
-
-  ```console
-  git commit -m "Adding a LocalDev branch."
-  ```
-
-  4. Let's push our local changes to our remote repo.
-
-  ```console
-  git checkout main
-  ```
-
-  ```console
-  git merge LocalDev
-  ```
-
-  ```console
-  git push origin main
-  ```
-
-
-5. Add the `Build Your-Own RAQA System` (YFL) repo as an extra remote repo:
-
-  ```console
-  git remote add YFL git@github.com:AI-Maker-Space/LangChain-Concepts-101---Build-Your-Own-RAQA-System.git
-  ```
-
-  Let's check our remote repos:
-
-  ```console
-  git remote -v
-  ```
-
-  At this point, you should have access to both your own repo and AI Makerspace and should see something like this:
-
-  ```console
-  YFL    git@github.com:AI-Maker-Space/LangChain-Concepts-101---Build-Your-Own-RAQA-System.git (fetch)
-  YFL    git@github.com:AI-Maker-Space/LangChain-Concepts-101---Build-Your-Own-RAQA-System.git (push)
-  origin git@github.com:ai-kadhim/TestRepo.git (fetch)
-  origin git@github.com:ai-kadhim/TestRepo.git (push)
-  ```
-
-  Let's update our local repos:
-
-  ```console
-  git fetch --all
-  ```
-
-  Make a new branch for the `Build Your-Own RAQA System` material (YFLBranch).
-  ```console
-  git checkout --track -b YFLBranch YFL/main
-  ```
-  
-  You should see something like this:
-  
-  ```console
-  Branch 'YFLBranch' set up to track remote branch 'main' from 'YFL'.
-  ```
-
-  You can visually check whether you are in that branch:
-
-  ```console
-  git log --all --graph
-  ```
-
-  Now let's push our updated local repo to our remote repo!
-
-  ```console
-  git checkout main
-  ```
-
-  ```console
-  git merge YFLBranch --allow-unrelated-histories
-  ```
-
-  If there are any conflicts you'll need to resolve them.
-  ```console
-  git add .
-  ```
-  
-  ```console
-  git commit -m "message-here"
-  ```
-  
-  ```console
-  git push origin main
-  ```
-
-  From now on... after each release follow these steps to update your repo with new content:
-  ```console
-  git fetch --all
-  git checkout YFLBranch
-  git merge --ff-only @{u}
-  git add .
-  git commit -m "branch is updated"
-  git checkout main
-  git merge YFLBranch --allow-unrelated-histories
+  git merge BCBranch --allow-unrelated-histories
   ```
 
   You will be asked to add a comment about why this change is necessary --> add a message.
@@ -1005,8 +860,11 @@ Great! Time to ship!
 
 ![Screenshot 2023-08-30 at 7 12 47 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/8f16afd1-6b46-4d9f-b642-8fefe355c5c9)
 
+3. You should see something like this. We're now ready to send our files to our Huggingface Space.
 
+![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/cbf366e2-7613-4223-932a-72c67a73f9c6)
 
+4. 
 Access the Application
 
 Once deployed, access your app at:
