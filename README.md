@@ -951,16 +951,24 @@ OPENAI_API_KEY=sk-###
 
 Let's try deploying it locally. Make sure you're in the python environment where you installed Chainlit and OpenAI.
 
-Run the app using Chainlit
+Run the app using Chainlit. This may take a minute to run.
 
 ```
 chainlit run app.py -w
 ```
 
+![Screenshot 2023-08-31 at 12 23 40 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/54bcccf9-12e2-4cef-ab53-585c1e2b0fb5)
+
+
 Great work! Let's see if we can interact with our chatbot.
 
-Time to throw it into a docker container a prepare it for shipping
+![Screenshot 2023-08-31 at 12 25 31 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/854e4435-1dee-438a-9146-7174b39f7c61)
 
+
+Awesome! Time to throw it into a docker container and prepare it for shipping
+
+
+# Adding it to a Container
 Build the Docker image. We'll tag our image as `llm-app` using the `-t` parameter. The `.` at the end means we want all of the files in our current directory to be added to our image.
 ``` bash
 docker build -t llm-app .
