@@ -6,7 +6,7 @@
 
 ## <h1 align="center" id="heading">:wave: Welcome to Software Development for LLMOps 101!!</h1>
 
-Welcome to the beginning of your journey to becoming an LLM Operations (LLMOps) Engineer! 🎉 Follow these steps to get your development environment teed up! After you've finished this set-up, feel free to go through the associated `Whodunit?`! 🕵️‍♀️
+Welcome to the beginning of your journey to becoming an LLM Operations (LLMOps) Engineer! 🎉 Follow these steps to get your development environment teed up!
 
 ![ai_kadhim_setting_up_developers_environment_873c1f1c-1fdb-4cbd-997c-b0479554b8d0](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/b0f4e041-33a9-407f-bc9d-5aabd626652a)
 
@@ -60,9 +60,8 @@ Some commands we will use in this lesson when it comes to `conda` and `pip`:
 
 `conda activate llmops-course` -> This activates the virtual environment you made with the above command for your current terminal session.
 
-`pip install numpy pandas matplotlib jupyter` -> This installs the four packages mentioned - `numpy`, `pandas`, `jupyter` and `matplotlib`. `numpy` is used for scientific computing, `pandas` is used for data analysis, and `matplotlib` is used for data graphics. `jupyter` is discussed later in this tutorial in depth! `pip` is the Python package manager and you are telling it to `install` the listed packages to your environment.
+`pip install numpy pandas matplotlib jupyter openai` -> This installs the five packages mentioned - `numpy`, `pandas`, `jupyter`, `matplotlib`, and `openai`. `numpy` is used for scientific computing, `pandas` is used for data analysis, `matplotlib` is used for data graphics. `jupyter` is discussed later in this tutorial in depth! `openai` is used to access OpenAI's GPT models through an API key. `pip` is the Python package manager and you are telling it to `install` the listed packages to your environment.
 
-`pip install openai` -> This installs the OpenAI packages so you can access the OpenAI API using your API Key. We recommend your run through our [OpenAI Notebook](https://colab.research.google.com/drive/16Y67VozkGVErtrF3WQArpM52AOk5pBGu?usp=sharing#scrollTo=3qCKaH6vD-jZ) to learn how to utilize the OpenAI API.
 </details>
 
 <p></p>
@@ -899,6 +898,8 @@ Name your key and click `Create secret key`
 Copy the key and save it for later use. We will use this key several times in deploying projects. Please do not lose this key or you will need to generate a new one
 
 ![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/cfaec5fa-5380-4aca-a6ae-6c14c8db6789)
+
+We recommend your run through our [OpenAI Notebook](https://colab.research.google.com/drive/16Y67VozkGVErtrF3WQArpM52AOk5pBGu?usp=sharing#scrollTo=3qCKaH6vD-jZ) to learn how to utilize the OpenAI API.
 </details>
 
 <details>
@@ -936,6 +937,7 @@ pip install langchain
 Install docker
 
 
+Update with Github token information
+https://github.com/settings/tokens
 
-
-
+generate token to login
