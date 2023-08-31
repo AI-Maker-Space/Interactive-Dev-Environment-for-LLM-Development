@@ -243,6 +243,76 @@ After running the commands from the table, when prompted, initiate your conda ba
 
 <p> </p>
 
+
+
+
+## 🔑 Setting Up Keys and Tokens
+
+<details>
+  <summary>Generating a GitHub Access Token</summary>
+     
+**Create an account with GitHub [here](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home) if you do not have one.**
+
+Navigate to [GitHub's Developer Token settings](https://github.com/settings/tokens).
+Click on `Generate new token` > `Generate new token (classic)`
+![Screenshot 2023-08-30 at 8 16 58 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/d6f57901-6e69-42e5-a22c-37b48ff6e3fc)
+
+Give the token a description, set the expiration (we recommend 90 days), and check every box. When you're done, click `Generate token` at the bottom of the page. 
+
+![Screenshot 2023-08-30 at 8 36 14 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/451bad7b-ec8a-4429-a5bb-8d0212d00f50)
+
+Copy the access token and save it for later use. We will use this token to interact with GitHub. Please do not lose this access token or you will need to generate a new one.
+
+![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/f98c9644-e44b-4fd3-8590-db513bef6360)
+
+</details>
+
+
+<details>
+  <summary>Generating an OpenAI API key</summary>
+     
+**Create an account with OpenAI [here](https://platform.openai.com/signup) if you do not have one.**
+
+Navigate to [OpenAI's API Developer settings](https://platform.openai.com/account/api-keys) and click on `+ Create new secrete key`.
+![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/b6179d51-76ac-42a8-8304-39f8b5c9a8c8)
+
+Name your key and click `Create secret key`
+![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/be0ea05f-59d3-4d20-939d-b402e3d4bbb2)
+
+Copy the key and save it for later use. We will use this key several times in deploying projects. Please do not lose this key or you will need to generate a new one
+
+![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/cfaec5fa-5380-4aca-a6ae-6c14c8db6789)
+
+We recommend your run through our [OpenAI Notebook](https://colab.research.google.com/drive/16Y67VozkGVErtrF3WQArpM52AOk5pBGu?usp=sharing#scrollTo=3qCKaH6vD-jZ) to learn how to utilize the OpenAI API.
+</details>
+
+<details>
+  <summary>Generating a Huggingface Access Token</summary>
+     
+**Create an account with Huggingface [here](https://huggingface.co/join) if you do not have one.**
+
+Navigate to [Token settings](https://huggingface.co/settings/tokens) and click on `New token`.
+![Screenshot 2023-08-29 at 6 16 12 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/8ec271de-4cb2-44b0-b6f8-ea354e2c42c2)
+
+Name your access token, change the role to write, and click `Generate a token`
+![Screenshot 2023-08-29 at 6 16 58 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/b9ae1590-1541-497d-a54a-1188438844b8)
+
+Copy the token and save it for later use. We will use this token several times in deploying projects. If you lose this token, you can always go back to your token's page and view the token.
+
+![Screenshot 2023-08-29 at 6 17 29 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/5fa285fa-d2ef-4308-b713-fb7384a53516)
+
+Login to Huggingface using your terminal
+``` bash
+huggingface-cli login
+```
+![Screenshot 2023-08-29 at 6 13 23 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/31727145-8451-48bd-a560-9d92a8d4af3a)
+
+After logging in, press `y` to add the token to credentials for git.
+![Screenshot 2023-08-29 at 6 18 13 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/5215d7eb-7a40-4e50-acf1-a5b7c5186a54)
+
+</details>
+
+
 ## <img src="https://octodex.github.com/images/original.png" width=40px/> Let's Make Sure That GitHub is Ready to Roll!
 
 <details>
@@ -880,71 +950,7 @@ You've successfully created an LLM application with Chainlit, containerized it w
 
 
 
-## 🔑 Setting Up Keys and Tokens
 
-<details>
-  <summary>Generating a GitHub Access Token</summary>
-     
-**Create an account with GitHub [here](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home) if you do not have one.**
-
-Navigate to [GitHub's Developer Token settings](https://github.com/settings/tokens).
-Click on `Generate new token` > `Generate new token (classic)`
-![Screenshot 2023-08-30 at 8 16 58 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/d6f57901-6e69-42e5-a22c-37b48ff6e3fc)
-
-Give the token a description, set the expiration (we recommend 90 days), and check every box. When you're done, click `Generate token` at the bottom of the page. 
-
-![Screenshot 2023-08-30 at 8 36 14 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/451bad7b-ec8a-4429-a5bb-8d0212d00f50)
-
-Copy the access token and save it for later use. We will use this token to interact with GitHub. Please do not lose this access token or you will need to generate a new one.
-
-![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/f98c9644-e44b-4fd3-8590-db513bef6360)
-
-</details>
-
-
-<details>
-  <summary>Generating an OpenAI API key</summary>
-     
-**Create an account with OpenAI [here](https://platform.openai.com/signup) if you do not have one.**
-
-Navigate to [OpenAI's API Developer settings](https://platform.openai.com/account/api-keys) and click on `+ Create new secrete key`.
-![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/b6179d51-76ac-42a8-8304-39f8b5c9a8c8)
-
-Name your key and click `Create secret key`
-![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/be0ea05f-59d3-4d20-939d-b402e3d4bbb2)
-
-Copy the key and save it for later use. We will use this key several times in deploying projects. Please do not lose this key or you will need to generate a new one
-
-![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/cfaec5fa-5380-4aca-a6ae-6c14c8db6789)
-
-We recommend your run through our [OpenAI Notebook](https://colab.research.google.com/drive/16Y67VozkGVErtrF3WQArpM52AOk5pBGu?usp=sharing#scrollTo=3qCKaH6vD-jZ) to learn how to utilize the OpenAI API.
-</details>
-
-<details>
-  <summary>Generating a Huggingface Access Token</summary>
-     
-**Create an account with Huggingface [here](https://huggingface.co/join) if you do not have one.**
-
-Navigate to [Token settings](https://huggingface.co/settings/tokens) and click on `New token`.
-![Screenshot 2023-08-29 at 6 16 12 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/8ec271de-4cb2-44b0-b6f8-ea354e2c42c2)
-
-Name your access token, change the role to write, and click `Generate a token`
-![Screenshot 2023-08-29 at 6 16 58 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/b9ae1590-1541-497d-a54a-1188438844b8)
-
-Copy the token and save it for later use. We will use this token several times in deploying projects. If you lose this token, you can always go back to your token's page and view the token.
-
-![Screenshot 2023-08-29 at 6 17 29 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/5fa285fa-d2ef-4308-b713-fb7384a53516)
-
-Login to Huggingface using your terminal
-``` bash
-huggingface-cli login
-```
-![Screenshot 2023-08-29 at 6 13 23 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/31727145-8451-48bd-a560-9d92a8d4af3a)
-
-After logging in, press `y` to add the token to credentials for git.
-![Screenshot 2023-08-29 at 6 18 13 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/5215d7eb-7a40-4e50-acf1-a5b7c5186a54)
-
-</details>
 
 
 pip install huggingface_hub
