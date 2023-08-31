@@ -143,7 +143,7 @@ Enter the following commands in terminal to setup your environment. When prompte
 </details>
 
 <details>
-  <summary>macOS ARM</summary><br>
+  <summary>macOS Apple Silicone</summary><br>
 
 To leverage the Mx chip from Python, you must use a special Python distribution called [Miniforge](https://github.com/conda-forge/miniforge). 
 Open terminal using <kbd>⌘</kbd>+<kbd>Space</kbd> and type `terminal`. Enter the following commands in terminal to setup your environment.
