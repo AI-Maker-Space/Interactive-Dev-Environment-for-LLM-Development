@@ -916,46 +916,40 @@ Then click `Create Repository`.
 
 
 
-## 🤖 Your First LLM App
-<details>
-  <summary>🤖 Building Your First LLM App</summary>
-
-     
-Are you ready? 
+## Your First LLM App
 
 In this section, we'll walk you through the steps to create a Large Language Model (LLM) application using Chainlit, then containerize it using Docker, and finally deploy it on Huggingface Spaces.
 
-Let's get started!
+Are you ready? Let's get started!
 
-### Building our App
-Clone [this](https://github.com/AI-Maker-Space/Beyond-ChatGPT/tree/main) repo.
+<details>
+  <summary>🏗️ Building Your First LLM App</summary>
 
-``` bash
-git clone https://github.com/AI-Maker-Space/Beyond-ChatGPT.git
-```
+1. Clone [this](https://github.com/AI-Maker-Space/Beyond-ChatGPT/tree/main) repo.
 
-Navigate inside this repo
-```
-cd Beyond-ChatGPT
-```
+     ``` bash
+     git clone https://github.com/AI-Maker-Space/Beyond-ChatGPT.git
+     ```
 
-Install the packages required for this python envirnoment in `requirements.txt`.
-```
-pip install -r requirements.txt
-```
+2. Navigate inside this repo
+     ``` bash
+     cd Beyond-ChatGPT
+     ```
 
-Open your `.env` file. Replace the `###` in your `.env` file with your OpenAI Key and save the file.
-```
-OPENAI_API_KEY=sk-###
-```
+3. Install the packages required for this python envirnoment in `requirements.txt`.
+     ``` bash
+     pip install -r requirements.txt
+     ``` 
 
-Let's try deploying it locally. Make sure you're in the python environment where you installed Chainlit and OpenAI.
+4. Open your `.env` file. Replace the `###` in your `.env` file with your OpenAI Key and save the file.
+     ``` bash
+     OPENAI_API_KEY=sk-###
+     ```
 
-Run the app using Chainlit. This may take a minute to run.
-
-```
-chainlit run app.py -w
-```
+5. Let's try deploying it locally. Make sure you're in the python environment where you installed Chainlit and OpenAI. Run the app using Chainlit. This may take a minute to run.
+     ``` bash
+     chainlit run app.py -w
+     ```
 
 ![Screenshot 2023-08-31 at 12 23 40 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/54bcccf9-12e2-4cef-ab53-585c1e2b0fb5)
 
@@ -963,23 +957,27 @@ chainlit run app.py -w
 Great work! Let's see if we can interact with our chatbot.
 
 ![Screenshot 2023-08-31 at 12 25 31 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/854e4435-1dee-438a-9146-7174b39f7c61)
+     
+
+Awesome! Time to throw it into a docker container and prepare it for shipping!
+</details>
 
 
-Awesome! Time to throw it into a docker container and prepare it for shipping
 
+<details>
+  <summary>🐳 Containerizing our App</summary>
+1. Let's build the Docker image. We'll tag our image as `llm-app` using the `-t` parameter. The `.` at the end means we want all of the files in our current directory to be added to our image.
+     ``` bash
+     docker build -t llm-app .
+     ```
 
-# Adding it to a Container
-Build the Docker image. We'll tag our image as `llm-app` using the `-t` parameter. The `.` at the end means we want all of the files in our current directory to be added to our image.
-``` bash
-docker build -t llm-app .
-```
+2. Run and test the Docker image locally using the `run` command. The `-p`parameter connects our **host port #** to the left of the `:` to our **container port #** on the right.
+     ``` bash
+     docker run -p 7860:7860 llm-app
+     ```
 
-Run and test the Docker image locally using the `run` command. The `-p`parameter connects our **host port #** to the left of the `:` to our **container port #** on the right.
-``` bash
-docker run -p 7860:7860 llm-app
-```
-
-Visit http://localhost:7860 in your browser to see if the app runs correctly.
+3. Visit http://localhost:7860 in your browser to see if the app runs correctly.
+![Screenshot 2023-08-31 at 12 23 40 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/2c764f25-09a0-431b-8d28-32246e0ca1b7)
 
 Great! Time to ship!
 </details>
