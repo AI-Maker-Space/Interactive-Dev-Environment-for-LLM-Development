@@ -989,23 +989,11 @@ Great! Time to ship!
 <details>
   <summary>🚀 Deploying Your First LLM App</summary>
 
-1. Make sure you're logged into Huggingface Spaces CLI
-
-``` bash
-huggingface-cli login
-```
-
-2. Follow the prompts to authenticate.
-
-Deploy to Huggingface Spaces
-
-1. Let's create a new Huggingface Space. Navigate to Huggingface.co and click on your profile picture on the top right. Then click on `New Space`.
+1. Let's create a new Huggingface Space. Navigate to [Huggingface](https://huggingface.co) and click on your profile picture on the top right. Then click on `New Space`.
    
 ![Screenshot 2023-08-30 at 7 04 03 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/f0656408-28b8-4876-9887-8f0c4b882bae)
 
-
-
-2. Deploying on Huggingface Spaces using a custom Docker image involves using their web interface. Go to Huggingface Spaces and create a new space, then set it up to use your Docker image from the Huggingface Container Registry.
+2. Setup your space as shown below:
    
 - Owner: Your username
 - Space Name: `llm-app`
@@ -1016,6 +1004,7 @@ Deploy to Huggingface Spaces
 - Repo type: `Public`
 
 ![Screenshot 2023-08-30 at 7 12 47 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/8f16afd1-6b46-4d9f-b642-8fefe355c5c9)
+
 
 
 Access the Application
