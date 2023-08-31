@@ -94,7 +94,7 @@ Continue by installing the following tools using [Windows Terminal](https://www.
 
 | Tool | Purpose | Command                                                                                           |
 | :-------- | :-------- | :------------------------------------------------------------------------------------------------ |
-| :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `bash Anaconda3-2021.11-Linux-x86_64.sh` <br> `source ~/.bashrc` |
+| :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `bash Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `source ~/.bashrc` |
 | :octocat: **Git**  | Version Control | `sudo apt update && sudo apt upgrade` <br> `sudo apt install git-all`   |
 | :memo: **VS Code** | Development Environment | [Download](https://code.visualstudio.com/download) |
 
@@ -106,7 +106,7 @@ Continue by installing the following tools using [Windows Terminal](https://www.
 Open terminal using <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>. Enter the following commands in terminal to setup your environment. When prompted, make sure to add `conda` to `init`.
 | Tool | Purpose | Command                                                                                           |
 | :-------- | :-------- | :------------------------------------------------------------------------------------------------ |
-| :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `bash Anaconda3-2021.11-Linux-x86_64.sh` <br> `source ~/.bashrc` |
+| :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `bash Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `source ~/.bashrc` |
 | :octocat: **Git**  | Version Control | `sudo apt update && sudo apt upgrade` <br> `sudo apt install git-all`   |
 | :memo: **VS Code** | Development Environment | [Download](https://code.visualstudio.com/download) |
 
@@ -136,7 +136,7 @@ Enter the following commands in terminal to setup your environment. When prompte
 
 | Tool | Purpose | Command                                                                                           |
 | :-------- | :-------- | :------------------------------------------------------------------------------------------------ |
-| :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-MacOSX-x86_64.sh` <br> `bash Anaconda3-2021.11-MacOSX-x86_64.sh` <br> `source ~/.bashrc` |
+| :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-MacOSX-x86_64.sh` <br> `bash Anaconda3-2023.07-2-MacOSX-x86_64.sh` <br> `source ~/.bashrc` |
 | :octocat: **Git**  | Version Control | `brew install git`   |
 | :memo: **VS Code** | Development Environment | [Download](https://code.visualstudio.com/download) |
 
