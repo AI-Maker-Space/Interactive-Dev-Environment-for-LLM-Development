@@ -244,6 +244,79 @@ After running the commands from the table, when prompted, initiate your conda ba
 <p> </p>
 
 
+## 🐳 Setting up Docker Desktop and Compose
+
+
+<details>
+  <summary>Set up Docker for Ubuntu</summary>
+
+To install Docker Desktop successfully, you must:
+
+- Meet the [system requirements](linux-install.md#system-requirements)
+- Have a 64-bit version of either Ubuntu Jammy Jellyfish 22.04 (LTS) or Ubuntu Impish Indri 21.10.
+  Docker Desktop is supported on `x86_64` (or `amd64`) architecture.
+- For non-Gnome Desktop environments, `gnome-terminal` must be installed:
+  ```console
+  $ sudo apt install gnome-terminal
+  ```
+
+1.  Update the `apt` package index and install packages to allow `apt` to use a
+    repository over HTTPS:
+
+    ```console
+    $ sudo apt-get update
+    $ sudo apt-get install ca-certificates curl gnupg
+    ```
+
+2.  Add Docker's official GPG key:
+
+    ```console
+    $ sudo install -m 0755 -d /etc/apt/keyrings
+    $ curl -fsSL {{% param "download-url-base" %}}/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    $ sudo chmod a+r /etc/apt/keyrings/docker.gpg
+    ```
+
+3.  Use the following command to set up the repository:
+
+    ```console
+    $ echo \
+      "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] {{% param "download-url-base" %}} \
+      "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+      sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    ```
+
+4. Update the `apt` package index:
+
+   ```console
+   $ sudo apt-get update
+   ```
+
+
+5. Download Docker Desktop
+   
+     ``` bash
+     wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.22.1-amd64.deb
+     ```
+
+6. Install the package with apt as follows:
+     ```bash
+     $ sudo apt-get update
+     $ sudo apt-get install ./docker-desktop-<version>-<arch>.deb
+     ```
+     
+7. Launch Docker Desktop
+     ```bash
+          systemctl --user start docker-desktop
+     ```
+     
+   > **Note**
+   >
+   > At the end of the installation process, `apt` displays an error due to installing a downloaded package. You
+   > can ignore this error message.
+   >
+   > ```
+   > N: Download is performed unsandboxed as root, as file '/home/user/Downloads/docker-desktop.deb' couldn't be accessed by user '_apt'. - pkgAcquire::Run (13: Permission denied)
+</details>
 
 
 ## 🔑 Setting Up Keys and Tokens
@@ -966,75 +1039,6 @@ https://github.com/settings/tokens
 
 generate token to login
 
-<details>
-  <summary>Set up Docker for Ubuntu</summary>
-
-To install Docker Desktop successfully, you must:
-
-- Meet the [system requirements](linux-install.md#system-requirements)
-- Have a 64-bit version of either Ubuntu Jammy Jellyfish 22.04 (LTS) or Ubuntu Impish Indri 21.10.
-  Docker Desktop is supported on `x86_64` (or `amd64`) architecture.
-- For non-Gnome Desktop environments, `gnome-terminal` must be installed:
-  ```console
-  $ sudo apt install gnome-terminal
-  ```
-
-1.  Update the `apt` package index and install packages to allow `apt` to use a
-    repository over HTTPS:
-
-    ```console
-    $ sudo apt-get update
-    $ sudo apt-get install ca-certificates curl gnupg
-    ```
-
-2.  Add Docker's official GPG key:
-
-    ```console
-    $ sudo install -m 0755 -d /etc/apt/keyrings
-    $ curl -fsSL {{% param "download-url-base" %}}/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-    $ sudo chmod a+r /etc/apt/keyrings/docker.gpg
-    ```
-
-3.  Use the following command to set up the repository:
-
-    ```console
-    $ echo \
-      "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] {{% param "download-url-base" %}} \
-      "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
-      sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-    ```
-
-4. Update the `apt` package index:
-
-   ```console
-   $ sudo apt-get update
-   ```
-
-
-5. Download Docker Desktop
-   
-     ``` bash
-     wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.22.1-amd64.deb
-     ```
-
-6. Install the package with apt as follows:
-     ```bash
-     $ sudo apt-get update
-     $ sudo apt-get install ./docker-desktop-<version>-<arch>.deb
-     ```
-     
-7. Launch Docker Desktop
-     ```bash
-          systemctl --user start docker-desktop
-     ```
-     
-   > **Note**
-   >
-   > At the end of the installation process, `apt` displays an error due to installing a downloaded package. You
-   > can ignore this error message.
-   >
-   > ```
-   > N: Download is performed unsandboxed as root, as file '/home/user/Downloads/docker-desktop.deb' couldn't be accessed by user '_apt'. - pkgAcquire::Run (13: Permission denied)
    > ```
 
 </details>
