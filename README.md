@@ -966,12 +966,15 @@ Awesome! Time to throw it into a docker container and prepare it for shipping!
 
 <details>
   <summary>🐳 Containerizing our App</summary>
+
 1. Let's build the Docker image. We'll tag our image as `llm-app` using the `-t` parameter. The `.` at the end means we want all of the files in our current directory to be added to our image.
+     
      ``` bash
      docker build -t llm-app .
      ```
 
 2. Run and test the Docker image locally using the `run` command. The `-p`parameter connects our **host port #** to the left of the `:` to our **container port #** on the right.
+    
      ``` bash
      docker run -p 7860:7860 llm-app
      ```
@@ -986,20 +989,25 @@ Great! Time to ship!
 <details>
   <summary>🚀 Deploying Your First LLM App</summary>
 
-Make sure you're logged into Huggingface Spaces CLI
+1. Make sure you're logged into Huggingface Spaces CLI
 
 ``` bash
 huggingface-cli login
 ```
 
-Follow the prompts to authenticate.
+2. Follow the prompts to authenticate.
 
 
 Deploy to Huggingface Spaces
 
+1. Let's create a new Huggingface Space. Navigate to Huggingface.co and click on your profile picture on the top right. Then click on `New Space`.
+   
+![Screenshot 2023-08-30 at 7 04 03 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/f0656408-28b8-4876-9887-8f0c4b882bae)
 
-Create a new Huggingface Space
 
+
+2. Deploying on Huggingface Spaces using a custom Docker image involves using their web interface. Go to Huggingface Spaces and create a new space, then set it up to use your Docker image from the Huggingface Container Registry.
+   
 - Owner: Your username
 - Space Name: `llm-app`
 - License: `Openrail`
@@ -1008,9 +1016,8 @@ Create a new Huggingface Space
 - Space Hardware: `CPU basic - 2 vCPU - 16 GB - Free`
 - Repo type: `Public`
 
+![Screenshot 2023-08-30 at 7 12 47 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/8f16afd1-6b46-4d9f-b642-8fefe355c5c9)
 
-
-Deploying on Huggingface Spaces using a custom Docker image involves using their web interface. Go to Huggingface Spaces and create a new space, then set it up to use your Docker image from the Huggingface Container Registry.
 
 Access the Application
 
