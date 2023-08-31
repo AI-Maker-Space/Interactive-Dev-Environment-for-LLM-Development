@@ -1033,24 +1033,4 @@ You've successfully created an LLM application with Chainlit, containerized it w
 ### That's it for now!  And so it begins.... :)
 <p></p>
 
-
-
-
-
-
-pip install huggingface_hub
-pip install chainlit
-pip install langchain
-
-
-Install docker
-
-
-Update with Github token information
-https://github.com/settings/tokens
-
-generate token to login
-
-   > ```
-
 </details>
