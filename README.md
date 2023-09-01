@@ -914,24 +914,29 @@ Great! Time to ship!
 
 ![Screenshot 2023-08-30 at 7 12 47 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/8f16afd1-6b46-4d9f-b642-8fefe355c5c9)
 
-3. You should see something like this. We're now ready to send our files to our Huggingface Space.
+3. You should see something like this. We're now ready to send our files to our Huggingface Space. After cloning, move your files to this repo and push it along with your docker file. You DO NOT need to create a Dockerfile. Make sure NOT TO push your `.env` file. This should automatically be ignored.
 
 ![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/cbf366e2-7613-4223-932a-72c67a73f9c6)
 
-4. 
-Access the Application
+4. After pushing all files, navigate to the settings in the top right to add your OpenAI API key.
 
-Once deployed, access your app at:
+![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/a1123a6f-abdd-4f76-bea4-39acf9928762)
 
-ruby
-Copy code
-https://huggingface.co/spaces/your-username/llm-app
-Conclusion
-You've successfully created an LLM application with Chainlit, containerized it with Docker, and deployed it on Huggingface Spaces. Visit the link to interact with your deployed application.
+5. Scroll down to `Variables and secrets` and click on `New secret` on the top right.
+
+![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/a8a4a25d-752b-4036-b572-93381370c2db)
+
+6. Set the name to `OPENAI_API_KEY` and add your OpenAI key under `Value`. Click save.
+
+![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/16af9ef7-4580-4152-a41d-e852630a7b1d)
+
+7. To ensure your key is being used, we recommend you `Restart this Space`.
+
+![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/fb1d83af-6ebe-4676-8bf5-b6d88f07c583)
+
+
 </details>
 
-
-### That's it for now!  And so it begins.... :)
 <p></p>
 
-</details>
+### That's it for now!  And so it begins.... :)
