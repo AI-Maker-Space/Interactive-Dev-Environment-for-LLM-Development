@@ -249,6 +249,10 @@ After running the commands from the table, when prompted, initiate your conda ba
 <details>
   <summary>Windows</summary>
 
+
+
+**👉 [💿 Download Docker](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)** 👈
+
 1. Double-click **Docker Desktop Installer.exe** to run the installer.
 
 2. When prompted, ensure the **Use WSL 2 instead of Hyper-V** option on the Configuration page is selected or not depending on your choice of backend.
@@ -320,7 +324,7 @@ To install Docker Desktop successfully, you must:
 6. Install the package with apt as follows:
      ```bash
      $ sudo apt-get update
-     $ sudo apt-get install ./docker-desktop-<version>-<arch>.deb
+     $ sudo apt-get install ./docker-desktop-4.22.1-amd64.deb
      ```
      
 7. Launch Docker Desktop
@@ -338,9 +342,12 @@ To install Docker Desktop successfully, you must:
 </details>
 
 
+
 <details>
-  <summary>macOS Apple Silicone</summary>
-     
+  <summary>macOS (Intel and Apple Silicone)</summary>
+
+**👉 [💿 Download Docker](https://desktop.docker.com/mac/main/arm64/Docker.dmg)** 👈
+
 1. Double-click `Docker.dmg` to open the installer, then drag the Docker icon to
     the **Applications** folder.
 
