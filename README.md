@@ -369,6 +369,9 @@ To install Docker Desktop successfully, you must:
 6. Select **Finish**. If you have applied any of the above configurations that require a password in step 5, enter your password to confirm your choice.
 </details>
 
+
+
+
 ## 🔑 Setting Up Keys and Tokens
 
 <details>
@@ -860,13 +863,15 @@ Are you ready? Let's get started!
      chainlit run app.py -w
      ```
 
-![Screenshot 2023-08-31 at 12 23 40 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/54bcccf9-12e2-4cef-ab53-585c1e2b0fb5)
-
+<p align = "center" draggable=”false”>
+<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/54bcccf9-12e2-4cef-ab53-585c1e2b0fb5"> 
+</p>
 
 Great work! Let's see if we can interact with our chatbot.
 
-![Screenshot 2023-08-31 at 12 25 31 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/854e4435-1dee-438a-9146-7174b39f7c61)
-     
+<p align = "center" draggable=”false”>
+<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/854e4435-1dee-438a-9146-7174b39f7c61"> 
+</p> 
 
 Awesome! Time to throw it into a docker container and prepare it for shipping!
 </details>
@@ -889,7 +894,10 @@ Awesome! Time to throw it into a docker container and prepare it for shipping!
      ```
 
 3. Visit http://localhost:7860 in your browser to see if the app runs correctly.
-![Screenshot 2023-08-31 at 12 23 40 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/2c764f25-09a0-431b-8d28-32246e0ca1b7)
+
+<p align = "center" draggable=”false”>
+<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/2c764f25-09a0-431b-8d28-32246e0ca1b7"> 
+</p>
 
 Great! Time to ship!
 </details>
@@ -899,8 +907,10 @@ Great! Time to ship!
   <summary>🚀 Deploying Your First LLM App</summary>
 
 1. Let's create a new Huggingface Space. Navigate to [Huggingface](https://huggingface.co) and click on your profile picture on the top right. Then click on `New Space`.
-   
-![Screenshot 2023-08-30 at 7 04 03 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/f0656408-28b8-4876-9887-8f0c4b882bae)
+
+<p align = "center" draggable=”false”>
+<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/f0656408-28b8-4876-9887-8f0c4b882bae"> 
+</p>
 
 2. Setup your space as shown below:
    
@@ -912,27 +922,39 @@ Great! Time to ship!
 - Space Hardware: `CPU basic - 2 vCPU - 16 GB - Free`
 - Repo type: `Public`
 
-![Screenshot 2023-08-30 at 7 12 47 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/8f16afd1-6b46-4d9f-b642-8fefe355c5c9)
+<p align = "center" draggable=”false”>
+<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/8f16afd1-6b46-4d9f-b642-8fefe355c5c9"> 
+</p>
 
 3. You should see something like this. We're now ready to send our files to our Huggingface Space. After cloning, move your files to this repo and push it along with your docker file. You DO NOT need to create a Dockerfile. Make sure NOT TO push your `.env` file. This should automatically be ignored.
 
-![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/cbf366e2-7613-4223-932a-72c67a73f9c6)
+<p align = "center" draggable=”false”>
+<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/cbf366e2-7613-4223-932a-72c67a73f9c6"> 
+</p>
 
 4. After pushing all files, navigate to the settings in the top right to add your OpenAI API key.
 
-![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/a1123a6f-abdd-4f76-bea4-39acf9928762)
+<p align = "center" draggable=”false”>
+<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/a1123a6f-abdd-4f76-bea4-39acf9928762"> 
+</p>
 
 5. Scroll down to `Variables and secrets` and click on `New secret` on the top right.
 
-![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/a8a4a25d-752b-4036-b572-93381370c2db)
+<p align = "center" draggable=”false”>
+<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/a8a4a25d-752b-4036-b572-93381370c2db"> 
+</p>
 
 6. Set the name to `OPENAI_API_KEY` and add your OpenAI key under `Value`. Click save.
 
-![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/16af9ef7-4580-4152-a41d-e852630a7b1d)
+<p align = "center" draggable=”false”>
+<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/0a897538-1779-48ff-bcb4-486af30f7a14"> 
+</p>
 
 7. To ensure your key is being used, we recommend you `Restart this Space`.
 
-![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/fb1d83af-6ebe-4676-8bf5-b6d88f07c583)
+<p align = "center" draggable=”false”>
+<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/fb1d83af-6ebe-4676-8bf5-b6d88f07c583"> 
+</p>
 
 
 </details>
