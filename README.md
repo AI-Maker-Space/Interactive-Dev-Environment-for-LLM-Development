@@ -246,7 +246,6 @@ After running the commands from the table, when prompted, initiate your conda ba
 
 ## 🐳 Setting up Docker Desktop and Compose
 
-
 <details>
   <summary>Set up Docker for Ubuntu</summary>
 
@@ -318,6 +317,29 @@ To install Docker Desktop successfully, you must:
    > N: Download is performed unsandboxed as root, as file '/home/user/Downloads/docker-desktop.deb' couldn't be accessed by user '_apt'. - pkgAcquire::Run (13: Permission denied)
 </details>
 
+
+<details>
+  <summary>Set up Docker for macOS Apple Silicone</summary>
+1. Double-click `Docker.dmg` to open the installer, then drag the Docker icon to
+    the **Applications** folder.
+
+
+2. Double-click `Docker.app` in the **Applications** folder to start Docker.
+
+3. The Docker menu ({{< inline-image src="images/whale-x.svg" alt="whale menu" >}}) displays the Docker Subscription Service Agreement.
+
+    {{< include "desktop-license-update.md" >}}
+
+4. Select **Accept** to continue. 
+
+   Note that Docker Desktop won't run if you do not agree to the terms. You can choose to accept the terms at a later date by opening Docker Desktop.
+
+   For more information, see [Docker Desktop Subscription Service Agreement](https://www.docker.com/legal/docker-subscription-service-agreement). We recommend that you also read the [FAQs](https://www.docker.com/pricing/faq).
+5. From the installation window, select either: 
+   - **Use recommended settings (Requires password)**. This let's Docker Desktop automatically set the necessary configuration settings. 
+   - **Use advanced settings**. You can then set the location of the Docker CLI tools either in the system or user directory, enable the default Docker socket, and enable privileged port mapping. See [Settings](../settings/mac.md#advanced), for more information and how to set the location of the Docker CLI tools.
+6. Select **Finish**. If you have applied any of the above configurations that require a password in step 5, enter your password to confirm your choice.
+</details>
 
 ## 🔑 Setting Up Keys and Tokens
 
