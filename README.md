@@ -143,7 +143,7 @@ Enter the following commands in terminal to setup your environment. When prompte
 </details>
 
 <details>
-  <summary>macOS Apple Silicone</summary><br>
+  <summary>macOS Apple Silicon</summary><br>
 
 To leverage the Mx chip for Python, you must use a special Python distribution called [Miniforge](https://github.com/conda-forge/miniforge). 
 Open terminal using <kbd>⌘</kbd>+<kbd>Space</kbd> and type `terminal`. Enter the following commands in terminal to setup your environment.
@@ -344,7 +344,7 @@ To install Docker Desktop successfully, you must:
 
 
 <details>
-  <summary>macOS (Intel and Apple Silicone)</summary>
+  <summary>macOS (Intel and Apple Silicon)</summary>
 
 **👉 [💿 Download Docker](https://desktop.docker.com/mac/main/arm64/Docker.dmg)** 👈
 
