@@ -247,7 +247,7 @@ After running the commands from the table, when prompted, initiate your conda ba
 ## 🐳 Setting up Docker Desktop and Compose
 
 <details>
-  <summary>Set up Docker for Windows</summary>
+  <summary>Windows</summary>
 
 To install Docker Desktop successfully, you must:
 
@@ -320,7 +320,7 @@ To install Docker Desktop successfully, you must:
 
 
 <details>
-  <summary>Set up Docker for Ubuntu</summary>
+  <summary>Ubuntu</summary>
 
 To install Docker Desktop successfully, you must:
 
@@ -392,7 +392,7 @@ To install Docker Desktop successfully, you must:
 
 
 <details>
-  <summary>Set up Docker for macOS Apple Silicone</summary>
+  <summary>macOS Apple Silicone</summary>
      
 1. Double-click `Docker.dmg` to open the installer, then drag the Docker icon to
     the **Applications** folder.
