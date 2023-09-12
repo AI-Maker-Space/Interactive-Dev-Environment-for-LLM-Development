@@ -4,7 +4,7 @@
 </p>
 
 
-## <h1 align="center" id="heading">:wave: Welcome to Software Development for LLMOps 101!!</h1>
+## <h1 align="center" id="heading">:wave: Welcome to Setting Up Your Interactive Dev Environment for LLM Development!</h1>
 
 Welcome to the beginning of your journey to becoming an LLM Operations (LLMOps) Engineer! 🎉 Follow these steps to get your development environment teed up!
 
