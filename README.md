@@ -94,9 +94,9 @@ Continue by installing the following tools using [Windows Terminal](https://www.
 
 | Tool | Purpose | Command                                                                                           |
 | :-------- | :-------- | :------------------------------------------------------------------------------------------------ |
-| :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `bash Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `source ~/.bashrc` |
-| :octocat: **Git**  | Version Control | `sudo apt update && sudo apt upgrade` <br> `sudo apt install git-all`   |
-| :memo: **VS Code** | Development Environment | [Download](https://code.visualstudio.com/download) |
+| :snake: **Anaconda** (installed in WSL2) | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `bash Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `source ~/.bashrc` |
+| :octocat: **Git** (installed in WSL2) | Version Control | `sudo apt update && sudo apt upgrade` <br> `sudo apt install git-all`   |
+| :memo: **VS Code** (installed in Windows) | Development Environment | [Download](https://code.visualstudio.com/download) |
 
 </details>
 
