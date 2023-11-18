@@ -8,8 +8,14 @@
 
 Welcome to the beginning of your journey to becoming an LLM Operations (LLMOps) Engineer! 🎉 Follow these steps to get your development environment teed up!
 
-![ai_kadhim_setting_up_developers_environment_873c1f1c-1fdb-4cbd-997c-b0479554b8d0](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/b0f4e041-33a9-407f-bc9d-5aabd626652a)
+![](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/b0f4e041-33a9-407f-bc9d-5aabd626652a)
 
+## <h1 align="center" id="heading">:wave: Welcome to Beyond ChatGPT!!</h1>
+
+For a step-by-step YouTube video walkthrough, watch this! <br />
+[Setting up your LLM Ops Dev Environment](https://www.youtube.com/live/4pkzY95Otm4?si=-AQ9FgCSb9QZ7vY4)
+
+![](https://img.youtube.com/vi/4pkzY95Otm4/hqdefault.jpg)
 
 ## :books: Quick Review
 We will be using some terminal commands, so let's make sure you know what they are and what they do! 
