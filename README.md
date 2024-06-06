@@ -214,7 +214,11 @@ After running the commands from the table, when prompted, initiate your conda ba
 
   2. Type "Python" in the search bar.
 
-  3. Click `Install` <img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/4c06f2a7-d7c3-4c59-b656-82170518cbeb" width=30px/>  on both the <ins><strong>Python Extension</strong></ins> and on the <ins><strong>Microsoft Jupyter Notebook Extension</strong></ins>
+  3. Click `Install` <img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/4c06f2a7-d7c3-4c59-b656-82170518cbeb" width=30px/>  on the <ins><strong>Python Extension</strong></ins>
+
+  4. Then, type "Jupyter" in the search bar.
+
+  5. Click `Install` <img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/4c06f2a7-d7c3-4c59-b656-82170518cbeb" width=30px/>  on the <ins><strong>Microsoft Jupyter Notebook Extension</strong></ins>
 
 </details>
 
@@ -668,7 +672,8 @@ Then click `Create Repository`.
   You should see something like this:
   
   ```console
-  Branch 'BCBranch' set up to track remote branch 'main' from 'BC'.
+  branch 'BCBranch' set up to track 'BC/main'.
+  Switched to a new branch 'BCBranch'
   ```
 
   You can visually check whether you are in that branch:
