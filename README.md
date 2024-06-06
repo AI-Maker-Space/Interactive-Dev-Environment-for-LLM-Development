@@ -62,7 +62,7 @@ Conda is an open-source, cross-platform, language-agnostic package manager and e
 
 Some commands we will use in this lesson when it comes to `conda` and `pip`:
 
-`conda create --name llmops-course python=3.11 pip` -> This creates a virtual environment. A virtual environment is a Python environment such that the Python interpreter, libraries, amnd scripts installed into it are isolated from those installed on other environments and any libraries installed on the system. So basically, this allows you to keep all your project's code/dependencies/libraries separated from other projects. You are specifically saying to create said environment with the name `llmops-course`, use `python` version 3.8, and use `pip` as your package manager. The command `conda` invokes the underlying logic to actually make the virtual environment and manages said environments for you.
+`conda create --name llmops-course python=3.11 pip` -> This creates a virtual environment. A virtual environment is a Python environment such that the Python interpreter, libraries, amnd scripts installed into it are isolated from those installed on other environments and any libraries installed on the system. So basically, this allows you to keep all your project's code/dependencies/libraries separated from other projects. You are specifically saying to create said environment with the name `llmops-course`, use `python` version 3.11, and use `pip` as your package manager. The command `conda` invokes the underlying logic to actually make the virtual environment and manages said environments for you.
 
 `conda activate llmops-course` -> This activates the virtual environment you made with the above command for your current terminal session.
 
