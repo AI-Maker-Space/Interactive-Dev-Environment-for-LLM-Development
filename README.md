@@ -804,7 +804,7 @@ Then click `Create Repository`.
 
   ![coding histogram](images/coding_histogram.jpeg)
 
-  6. Now let's commit our code to our remote repository. This can be done one of two ways - either through the terminal or through VS Code's GUI. I'll explain both ways and you can choose which you'll use.
+  6. Now let's commit our code to our remote repository. This can be done one of two ways - either through the terminal or through VS Code's GUI. I'll explain the VS Code way and but you can also choose to use the terminal method by making use of the commands demonstrated earlier.
     
   * Click `Source Control` <img src="images/vscode_source_control_tab.png" width=30px/>  on the left icon bar.
 
