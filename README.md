@@ -179,7 +179,7 @@ To get started, we need to download the MacOS package manager, <strong>Homebrew<
 
     `xcode-select --install`
 
-After running the commands from the table, when prompted, initiate your conda base environment by running `conda init`.
+After running the commands from the table, when prompted, initiate your conda base environment by running `conda init zsh`.
 | Tool | Purpose | Command                                                                                           |
 | :-------- | :-------- | :------------------------------------------------------------------------------------------------ |
 | :snake: **Miniforge**  | Python & ML Toolkits | `brew install miniforge` |
