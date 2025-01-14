@@ -103,6 +103,7 @@ Continue by installing the following tools using [Windows Terminal](https://www.
 | :snake: **Anaconda** (installed in WSL2) | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `bash Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `source ~/.bashrc` |
 | :octocat: **Git** (installed in WSL2) | Version Control | `sudo apt update && sudo apt upgrade` <br> `sudo apt install git-all`   |
 | :memo: **VS Code** (installed in Windows) | Development Environment | [Download](https://code.visualstudio.com/download) |
+| :memo: **Cursor** | Development Environment | [Download](https://www.cursor.com/downloads) |
 
 </details>
 
@@ -115,6 +116,7 @@ Open terminal using <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>. Enter the fol
 | :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `bash Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `source ~/.bashrc` |
 | :octocat: **Git**  | Version Control | `sudo apt update && sudo apt upgrade` <br> `sudo apt install git-all`   |
 | :memo: **VS Code** | Development Environment | [Download](https://code.visualstudio.com/download) |
+| :memo: **Cursor** | Development Environment | [Download](https://www.cursor.com/downloads) |
 
 </details>
 
@@ -145,6 +147,7 @@ Enter the following commands in terminal to setup your environment. When prompte
 | :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-MacOSX-x86_64.sh` <br> `bash Anaconda3-2023.07-2-MacOSX-x86_64.sh` <br> `source ~/.bashrc` |
 | :octocat: **Git**  | Version Control | `brew install git`   |
 | :memo: **VS Code** | Development Environment | [Download](https://code.visualstudio.com/download) |
+| :memo: **Cursor** | Development Environment | [Download](https://www.cursor.com/downloads) |
 
 </details>
 
@@ -185,6 +188,7 @@ After running the commands from the table, when prompted, initiate your conda ba
 | :snake: **Miniforge**  | Python & ML Toolkits | `brew install miniforge` |
 | :octocat: **Git**  | Version Control | `sudo apt update && sudo apt upgrade` <br> `sudo apt install git-all`   |
 | :memo: **VS Code** | Development Environment | [Download](https://code.visualstudio.com/download) |
+| :memo: **Cursor** | Development Environment | [Download](https://www.cursor.com/downloads) |
 
 </details>
 
@@ -192,14 +196,14 @@ After running the commands from the table, when prompted, initiate your conda ba
 <p></p>
 
 
-## <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Visual_Studio_Code_0.10.1_icon.png" height=40px/> Let's configure our VS Code environment!
+## <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Visual_Studio_Code_0.10.1_icon.png" height=40px/> Let's configure our VS Code (or Cursor) environment!
 
 <details>
   <summary>Install the IntelliCode Extension</summary>
 
   IntelliCode is an AI-powered code completion extension to boost coding productivity. :sunglasses:
 
-  1. Click the `Extensions` <img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/f17d8f45-f174-4b9b-be92-8f1e85d8a77b" width=30px/> tab in the navigation panel on the left side of VS Code. 
+  1. Click the `Extensions` <img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/f17d8f45-f174-4b9b-be92-8f1e85d8a77b" width=30px/> tab in the navigation panel on the left side of VS Code (or Cursor). 
 
   2. Type "IntelliCode" in the search bar.
 
@@ -225,23 +229,23 @@ After running the commands from the table, when prompted, initiate your conda ba
 <details>
   <summary>Set the Python Interpreter</summary>
 
-  1. Open VS Code and click on `New File...`
+  1. Open VS Code (or Cursor) and click on `New File...`
 
-  2. Open the Command Pallette 
+  3. Open the Command Pallette 
     <strong>(Mac: </strong></ins> <kbd>Shift</kbd><kbd>⌘</kbd>+<kbd>P</kbd> 
     ,<strong> Windows: </strong></ins> <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>)
 
-  3. Type "Python" in the search bar.
+  4. Type "Python" in the search bar.
 
-  4. Click on `New Python File`
+  5. Click on `New Python File`
 
-  5. Open the Command Pallette again.  Can you remember the shortcut?  If    not, see #2 above again.
+  6. Open the Command Pallette again.  Can you remember the shortcut?  If    not, see #2 above again.
 
-  6. Type "Python Interpreter".
+  7. Type "Python Interpreter".
 
-  7. Click on `Python: Select Interpreter`
+  8. Click on `Python: Select Interpreter`
 
-  8. Select the `Conda` environment that you installed earlier. 
+  9. Select the `Conda` environment that you installed earlier. 
   
   <p align = "center" draggable=”false”>
   <img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/d95ff119-2c97-4bf8-9133-1bf167f61f6e"> 
@@ -739,7 +743,7 @@ Then click `Create Repository`.
 
   <summary>Adding a Feature Branch</summary>
 
-  Let's add a feature branch to our local repo.  Earlier, we showed you how to add a feature branch and content to your repo via the Terminal.  This time we are going to show you how to do it using the VS Code GUI.  
+  Let's add a feature branch to our local repo.  Earlier, we showed you how to add a feature branch and content to your repo via the Terminal.  This time we are going to show you how to do it using the VS Code (or Cursor) GUI.  
   
   1. Click on the `main` <img src="images/vscode_main_branch.png" width=30px/> branch in the lower left side of the screen 
 
@@ -783,7 +787,7 @@ Then click `Create Repository`.
 <details>
   <summary>Hello World! - Part 2 - Notebook Edition</summary>
 
-  1. Create a new file under `app` by clicking on the `Add file` button <img src="images/vscode_add_file.png" width=30px/> and let's name this file `hello_world.ipynb`. The `.ipynb` extension is a notebook extension which will allow you to interact with your code via a notebook in  VS Code, instead of a vanilla Python file. You might need to select your kernel in the top right of the notebook file, if so, choose the one we created previously.
+  1. Create a new file under `app` by clicking on the `Add file` button <img src="images/vscode_add_file.png" width=30px/> and let's name this file `hello_world.ipynb`. The `.ipynb` extension is a notebook extension which will allow you to interact with your code via a notebook in  VS Code (or Cursor), instead of a vanilla Python file. You might need to select your kernel in the top right of the notebook file, if so, choose the one we created previously.
   
   2. In the first cell of `hello_world.ipynb` lets do our imports. 
 
@@ -809,7 +813,7 @@ Then click `Create Repository`.
 
   ![coding histogram](images/coding_histogram.jpeg)
 
-  6. Now let's commit our code to our remote repository. This can be done one of two ways - either through the terminal or through VS Code's GUI. I'll explain the VS Code way and but you can also choose to use the terminal method by making use of the commands demonstrated earlier.
+  6. Now let's commit our code to our remote repository. This can be done one of two ways - either through the terminal or through VS Code's (or Cursor) GUI. I'll explain the VS Code (or Cursor) way and but you can also choose to use the terminal method by making use of the commands demonstrated earlier.
     
   * Click `Source Control` <img src="images/vscode_source_control_tab.png" width=30px/>  on the left icon bar.
 
