@@ -443,7 +443,7 @@ Name your access token, change the role to write, and click `Generate a token`
 
 Copy the token and save it for later use. We will use this token several times in deploying projects. If you lose this token, you can always go back to your token's page and view the token.
 
-![Screenshot 2023-08-29 at 6 17 29 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/5fa285fa-d2ef-4308-b713-fb7384a53516)
+![Huggingface Save Created Token](images/huggingface_save_created_token.png)
 
 Login to Huggingface using your terminal
 ``` bash
