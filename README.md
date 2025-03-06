@@ -66,7 +66,7 @@ Some commands we will use in this lesson when it comes to `conda` and `pip`:
 
 `conda activate llmops-course` -> This activates the virtual environment you made with the above command for your current terminal session.
 
-`pip install numpy pandas matplotlib jupyter openai huggingface_hub` -> This installs the six packages mentioned - `numpy`, `pandas`, `jupyter`, `matplotlib`, and `openai`. `numpy` is used for scientific computing, `pandas` is used for data analysis, `matplotlib` is used for data graphics. `jupyter` is discussed later in this tutorial in depth! `openai` is used to access OpenAI's GPT models through an API key. `huggingface_hub` is used to push our code and models to Huggingface and host it in a Huggingface Space. `pip` is the Python package manager and you are telling it to `install` the listed packages to your environment.
+`pip install numpy pandas matplotlib jupyter openai huggingface_hub` -> This installs the six packages mentioned - `numpy`, `pandas`, `jupyter`, `matplotlib`, and `openai`. `numpy` is used for scientific computing, `pandas` is used for data analysis, `matplotlib` is used for data graphics. `jupyter` is discussed later in this tutorial in depth! `openai` is used to access OpenAI's GPT models through an API key. `huggingface_hub` is used to push our code and models to Hugging Face and host it in a Hugging Face Space. `pip` is the Python package manager and you are telling it to `install` the listed packages to your environment.
 
 </details>
 
@@ -417,13 +417,13 @@ Copy the access token and save it for later use. We will use this token to inter
      
 **Create an account with OpenAI [here](https://platform.openai.com/signup) if you do not have one.**
 
-Navigate to [OpenAI's API Developer settings](https://platform.openai.com/account/api-keys) and click on `+ Create new secrete key`.
+Navigate to [OpenAI's API Developer settings](https://platform.openai.com/account/api-keys) and click on `+ Create new secret key`.
 ![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/b6179d51-76ac-42a8-8304-39f8b5c9a8c8)
 
 Name your key and click `Create secret key`
 ![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/be0ea05f-59d3-4d20-939d-b402e3d4bbb2)
 
-Copy the key and save it for later use. We will use this key several times in deploying projects. Please do not lose this key or you will need to generate a new one
+Click the `Copy` button and save the key somewhere that is secure. We will use this key several times in deploying projects. As stated in the modal, _If you lose this secret key, you'll need to generate a new one._
 
 ![image](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/cfaec5fa-5380-4aca-a6ae-6c14c8db6789)
 
@@ -431,21 +431,21 @@ We recommend your run through our [OpenAI Notebook](https://colab.research.googl
 </details>
 
 <details>
-  <summary>Generating a Huggingface Access Token</summary>
+  <summary>Generating a Hugging Face Access Token</summary>
      
-**Create an account with Huggingface [here](https://huggingface.co/join) if you do not have one.**
+**Create an account with Hugging Face [here](https://huggingface.co/join) if you do not have one.**
 
-Navigate to [Token settings](https://huggingface.co/settings/tokens) and click on `New token`.
-![Screenshot 2023-08-29 at 6 16 12 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/8ec271de-4cb2-44b0-b6f8-ea354e2c42c2)
+Navigate to [Token settings](https://huggingface.co/settings/tokens) and click on `+ Create new token`.
+![Hugging Face Access Tokens View](images/huggingface_access_tokens_view.png)
 
-Name your access token, change the role to write, and click `Generate a token`
-![Screenshot 2023-08-29 at 6 16 58 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/b9ae1590-1541-497d-a54a-1188438844b8)
+Change the token type to write, name your access token, and click `Create token`
+![Hugging Face Create Token](images/huggingface_create_token.png)
 
-Copy the token and save it for later use. We will use this token several times in deploying projects. If you lose this token, you can always go back to your token's page and view the token.
+Click the `Copy` button and save the token somewhere that is secure. We will use this token several times in deploying projects. As stated in the modal, _if you lose it, you'll have to create a new one._
 
-![Screenshot 2023-08-29 at 6 17 29 PM](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/5fa285fa-d2ef-4308-b713-fb7384a53516)
+![Hugging Face Save Created Token](images/huggingface_save_created_token.png)
 
-Login to Huggingface using your terminal
+Login to Hugging Face using your terminal
 ``` bash
 huggingface-cli login
 ```
@@ -792,57 +792,3 @@ Then click `Create Repository`.
   2. In the first cell of `hello_world.ipynb` lets do our imports. 
 
       ```
-      import pandas as pd
-      import numpy as np
-      import matplotlib.pyplot as plt
-      ```
-
-  3. Run the cell by either clicking the play button or by doing `CTRL + ENTER`. 
-
-  4. Create a new cell and in that put the following code:
-      ```
-      np.random.seed(0)
-
-      values = np.random.randn(100) # array of normally distributed random numbers
-      s = pd.Series(values) # generate a pandas series
-      s.plot(kind='hist', title='Normally distributed random values') # hist computes distribution
-      plt.show()   
-      ```
-      
-  5. Run the cell and you should see your histogram plot! Well done. 
-
-  ![coding histogram](images/coding_histogram.jpeg)
-
-  6. Now let's commit our code to our remote repository. This can be done one of two ways - either through the terminal or through VS Code's (or Cursor) GUI. I'll explain the VS Code (or Cursor) way and but you can also choose to use the terminal method by making use of the commands demonstrated earlier.
-    
-  * Click `Source Control` <img src="images/vscode_source_control_tab.png" width=30px/>  on the left icon bar.
-
-  * Add a message to your commit by typing in the message field. 
-
-  * Click the check mark <img src="images/vscode_commit_check_mark.png" width=30px/> button under changes to add your files to this commit.  If you haven't saved your changes, you will be prompted to `Save All and Commit`.  Click `Save All and Commit`.
-  
-     
-     
-       <details>
-       <summary>OPTIONAL: Manually staging individual files</summary>
-          1. You can manually stage files by pressing the `+` button.
-          
-       ![image](https://i.imgur.com/2NnnSbc.png)
-       </details>
-
-  * Click the elipsis in `Source Control` <img src="images/vscode_ellipsis.png" width=30px/> ribbon and click `Push`.  You may also be prompted to `Sync Changes`.  This will do Pull and Push, which will fetch new changes to the code and push your updates as well.
-
-  * You can then put in a pull request in GitHub <img src="images/github_pull_request.png" width=100px/>  to merge into the branch that you pulled from, in this case the main branch.  In real life, you would then review the code changes with another developer/team lead/supervisor and address any potential code conflicts.  
-  
-  <p align = "center" draggable=”false” ><img src="images/github_pull_request_compare.png" 
-      width="500px"
-      height="auto"/>
-  </p>
-  
-</details>
-
-
-
-## Build Your First LLM Application
-
-Now that you've completed your IDE set-up, head on over to the [Beyond-ChatGPT](https://github.com/AI-Maker-Space/Beyond-ChatGPT) repository to build your first LLM application!
