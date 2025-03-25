@@ -40,7 +40,7 @@ We will be using some terminal commands, so let's make sure you know what they a
 <p></p>
 
 ## :hammer_and_wrench: Tools We'll Be Using
-We will also be using a few tools such as `git`, `conda`, and `pip`.
+We will also be using a few tools such as `git`, `uv`, and `pip`.
 <details>
 <summary>Git</summary>
 
@@ -56,17 +56,17 @@ Git is a free and open source distributed version control system designed to han
 </details>
 
 <details>
-<summary>Conda & Pip</summary>
+<summary>uv & Pip</summary>
 
-Conda is an open-source, cross-platform, language-agnostic package manager and environment management system. We will use `pip` within `conda` environments to manage our package installations. `pip` is Python's package management system. `conda` comes with Anaconda. And Anaconda is a convenient way to set up your Python programming environment since it comes with an enviornment management tool (`conda`) and comes with extra packages that are commonly used in data science and ML.
+uv is an extremely fast Python package manager and virtual environment management tool, written in Rust. uv aims to be a drop-in replacement for pip and pip-tools, providing significantly improved performance. We will use `uv` to manage both our package installations and virtual environments.
 
-Some commands we will use in this lesson when it comes to `conda` and `pip`:
+Some commands we will use in this lesson when it comes to `uv` and `pip`:
 
-`conda create --name llmops-course python=3.11 pip` -> This creates a virtual environment. A virtual environment is a Python environment such that the Python interpreter, libraries, amnd scripts installed into it are isolated from those installed on other environments and any libraries installed on the system. So basically, this allows you to keep all your project's code/dependencies/libraries separated from other projects. You are specifically saying to create said environment with the name `llmops-course`, use `python` version 3.11, and use `pip` as your package manager. The command `conda` invokes the underlying logic to actually make the virtual environment and manages said environments for you.
+`uv venv create -p 3.11 .venv` -> This creates a virtual environment with Python 3.11. A virtual environment is a Python environment such that the Python interpreter, libraries, and scripts installed into it are isolated from those installed on other environments and any libraries installed on the system. So basically, this allows you to keep all your project's code/dependencies/libraries separated from other projects.
 
-`conda activate llmops-course` -> This activates the virtual environment you made with the above command for your current terminal session.
+`uv venv activate` -> This activates the virtual environment for your current terminal session.
 
-`pip install numpy pandas matplotlib jupyter openai huggingface_hub` -> This installs the six packages mentioned - `numpy`, `pandas`, `jupyter`, `matplotlib`, and `openai`. `numpy` is used for scientific computing, `pandas` is used for data analysis, `matplotlib` is used for data graphics. `jupyter` is discussed later in this tutorial in depth! `openai` is used to access OpenAI's GPT models through an API key. `huggingface_hub` is used to push our code and models to Huggingface and host it in a Huggingface Space. `pip` is the Python package manager and you are telling it to `install` the listed packages to your environment.
+`uv pip install numpy pandas matplotlib jupyter openai huggingface_hub` -> This installs the six packages mentioned - `numpy`, `pandas`, `jupyter`, `matplotlib`, `openai`, and `huggingface_hub`. `numpy` is used for scientific computing, `pandas` is used for data analysis, `matplotlib` is used for data graphics. `jupyter` is discussed later in this tutorial in depth! `openai` is used to access OpenAI's GPT models through an API key. `huggingface_hub` is used to push our code and models to Huggingface and host it in a Huggingface Space.
 
 </details>
 
@@ -96,11 +96,11 @@ Give it a test drive!
 
 ![WindowsTerminal](https://user-images.githubusercontent.com/72572922/160048214-37f08855-8b29-4c13-9d25-e0f69806f752.jpg)
 
-Continue by installing the following tools using [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) to setup your environment. When prompted, make sure to add `conda` to `init`.
+Continue by installing the following tools using [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) to setup your environment.
 
 | Tool | Purpose | Command                                                                                           |
 | :-------- | :-------- | :------------------------------------------------------------------------------------------------ |
-| :snake: **Anaconda** (installed in WSL2) | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `bash Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `source ~/.bashrc` |
+| :snake: **uv** (installed in WSL2) | Python Package Manager | `curl -LsSf https://astral.sh/uv/install.sh | sh` <br> `source ~/.bashrc` |
 | :octocat: **Git** (installed in WSL2) | Version Control | `sudo apt update && sudo apt upgrade` <br> `sudo apt install git-all`   |
 | :memo: **VS Code** (installed in Windows) | Development Environment | [Download](https://code.visualstudio.com/download) |
 | :memo: **Cursor** | Development Environment | [Download](https://www.cursor.com/downloads) |
@@ -110,10 +110,10 @@ Continue by installing the following tools using [Windows Terminal](https://www.
 <details>
   <summary>Linux (Debian/Ubuntu)</summary>
 
-Open terminal using <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>. Enter the following commands in terminal to setup your environment. When prompted, make sure to add `conda` to `init`.
+Open terminal using <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>. Enter the following commands in terminal to setup your environment.
 | Tool | Purpose | Command                                                                                           |
 | :-------- | :-------- | :------------------------------------------------------------------------------------------------ |
-| :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `bash Anaconda3-2023.07-2-Linux-x86_64.sh` <br> `source ~/.bashrc` |
+| :snake: **uv**  | Python Package Manager | `curl -LsSf https://astral.sh/uv/install.sh | sh` <br> `source ~/.bashrc` |
 | :octocat: **Git**  | Version Control | `sudo apt update && sudo apt upgrade` <br> `sudo apt install git-all`   |
 | :memo: **VS Code** | Development Environment | [Download](https://code.visualstudio.com/download) |
 | :memo: **Cursor** | Development Environment | [Download](https://www.cursor.com/downloads) |
@@ -140,11 +140,11 @@ To get started, we need to download the MacOS package manager, <strong>Homebrew<
 4. Install the `wget` command to continue following along
      `brew install wget`
 
-Enter the following commands in terminal to setup your environment. When prompted, make sure to add `conda` to `init`.
+Enter the following commands in terminal to setup your environment.
 
 | Tool | Purpose | Command                                                                                           |
 | :-------- | :-------- | :------------------------------------------------------------------------------------------------ |
-| :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-MacOSX-x86_64.sh` <br> `bash Anaconda3-2023.07-2-MacOSX-x86_64.sh` <br> `source ~/.bashrc` |
+| :snake: **uv**  | Python Package Manager | `curl -LsSf https://astral.sh/uv/install.sh | sh` <br> `source ~/.bashrc` |
 | :octocat: **Git**  | Version Control | `brew install git`   |
 | :memo: **VS Code** | Development Environment | [Download](https://code.visualstudio.com/download) |
 | :memo: **Cursor** | Development Environment | [Download](https://www.cursor.com/downloads) |
@@ -154,39 +154,35 @@ Enter the following commands in terminal to setup your environment. When prompte
 <details>
   <summary>macOS Apple Silicon</summary><br>
 
-To leverage the Mx chip for Python, you must use a special Python distribution called [Miniforge](https://github.com/conda-forge/miniforge). 
+To get started with uv on Apple Silicon, we'll install it directly with our terminal.
+
 Open terminal using <kbd>⌘</kbd>+<kbd>Space</kbd> and type `terminal`. Enter the following commands in terminal to setup your environment.
 
-Miniforge can be installed using Homebrew or from the source. We suggest trying Homebrew option first.
+First, let's install Homebrew if you don't already have it installed:
 
-### Option 1 Homebrew
-
-To get started, we need to download the MacOS package manager, <strong>Homebrew</strong> :beer:, so that we can download the tools we'll be using in the course. If you don't already have Homebrew installed, run the following commands:
-
-1. Open terminal using <kbd>⌘</kbd>+<kbd>Space</kbd> and type `terminal`.
-
-2. Install Homebrew using the command below, following the command prompts:
+1. Install Homebrew using the command below, following the command prompts:
 
     `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` 
 
-3. Update Homebrew (This may take a few minutes)
+2. Update Homebrew (This may take a few minutes)
 
     `git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core fetch --unshallow`
 
     `git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask fetch`
      
-4. Install the `wget` command to continue following along
+3. Install the `wget` command to continue following along
      `brew install wget`
 
-5. Install the `xcode-select` command-line utilities by typing the following command in the terminal
+4. Install the `xcode-select` command-line utilities by typing the following command in the terminal
 
     `xcode-select --install`
 
-After running the commands from the table, when prompted, initiate your conda base environment by running `conda init`.
+Now let's install uv and other tools:
+
 | Tool | Purpose | Command                                                                                           |
 | :-------- | :-------- | :------------------------------------------------------------------------------------------------ |
-| :snake: **Miniforge**  | Python & ML Toolkits | `brew install miniforge` |
-| :octocat: **Git**  | Version Control | `sudo apt update && sudo apt upgrade` <br> `sudo apt install git-all`   |
+| :snake: **uv**  | Python Package Manager | `curl -LsSf https://astral.sh/uv/install.sh | sh` |
+| :octocat: **Git**  | Version Control | `brew install git`   |
 | :memo: **VS Code** | Development Environment | [Download](https://code.visualstudio.com/download) |
 | :memo: **Cursor** | Development Environment | [Download](https://www.cursor.com/downloads) |
 
@@ -245,9 +241,9 @@ After running the commands from the table, when prompted, initiate your conda ba
 
   8. Click on `Python: Select Interpreter`
 
-  9. Select the `Conda` environment that you installed earlier. 
+  9. Select the Python environment that was created by uv.
   
-  <p align = "center" draggable=”false”>
+  <p align = "center" draggable="false">
   <img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/d95ff119-2c97-4bf8-9133-1bf167f61f6e"> 
   </p>
 
@@ -733,9 +729,9 @@ Then click `Create Repository`.
 
 <details>
 
-  <summary>Activating Your Conda Environment</summary>
+  <summary>Activating Your Python Environment</summary>
 
-  1. Now, let's activate the environment we set-up earlier with the command `conda activate llmops-course`. If you were successful, you could see `(llmops-course)` preceeding your terminal commands.
+  1. Now, let's activate the virtual environment we set up earlier with the command `uv venv activate`. If you were successful, you should see your virtual environment name in your terminal.
 
 </details>
 
