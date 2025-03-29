@@ -427,6 +427,27 @@ We recommend your run through our [OpenAI Notebook](https://colab.research.googl
 </details>
 
 <details>
+  <summary>Generating a Claude API key</summary>
+
+**Create an account with Claude AI (anthropic.com) [here](htttps://console.anthropic.com) if you do not have one.**
+
+  Navigate to [Anthropic's Dashboard](https://console.anthropic.com/dashboard) and click on `Get API keys`
+  _NOTE: If you have not purchased credits yet, it will require you to purchase at least $5.00 worth before continuing._
+  ![Claude Actions](/images/claude_actions.png)
+
+  Enter a key name (or accept the default) and click on `Create API Key`
+  ![Claude Create API Key](/images/claude_create_api_key.png)
+
+  Click the `Copy` button and save the key somewhere that is secure. We will use this key several times in deploying projects. As stated in the modal, _Keep a record of your API key, you wont be able to view it again._
+
+![Claude Save API Key](/images/claude_save_api_key.png)
+
+  If you want to test the api key first, copy the example code and paste it into a terminal. The results will look something like this:
+  ![Claude API Key Test Results](/images/claude_api_key_test_results.png)
+
+</details>
+
+<details>
   <summary>Generating a Huggingface Access Token</summary>
      
 **Create an account with Huggingface [here](https://huggingface.co/join) if you do not have one.**
