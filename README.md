@@ -4,21 +4,50 @@
 </p>
 
 
-## <h1 align="center" id="heading">:wave: Welcome to Setting Up Your Interactive Dev Environment for Building with LLMs!!</h1>
+## <h1 align="center" id="heading">:wave: Interactive Dev Environment (IDE) for AI Engineers </h1>
 
-Welcome to the beginning of your journey to becoming an LLM Operations (LLMOps) Engineer! 🎉 Follow these steps to get your development environment teed up!
+<p align="center">
+  <img src="images/ai_engineer_at_workstation.jpg" alt="AI Engineer Setting Up Dev Env" width="300" />
+</p>
 
-![](https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/b0f4e041-33a9-407f-bc9d-5aabd626652a)
+### <h3 align="center"> Getting Started 🏗️ Building, 🚢 Shipping, and 🚀 Sharing Production LLM Application!!
 
-## <h1 align="center" id="heading">:wave: Welcome to Beyond ChatGPT!!</h1>
+🛣️ Welcome to the beginning of your journey to become an AI Engineer! 
 
-For a step-by-step YouTube video walkthrough, watch this! <br />
-[Setting up your LLM Ops Dev Environment](https://www.youtube.com/live/4pkzY95Otm4?si=-AQ9FgCSb9QZ7vY4)
+This tutorial is designed to guide you through the process of setting up your Interactive Development Environment (IDE) to align with best-practices at [The LLM Edge](https://newsletter.aimakerspace.io/) in 2025!
 
-![](https://img.youtube.com/vi/4pkzY95Otm4/hqdefault.jpg)
+### 🤖 AI Editors Supported 
+* [Cursor (Recommended for Beginners)](https://github.com/getcursor/cursor)
+* [Visual Studio Code](https://github.com/microsoft/vscode)
 
-## :books: Quick Review
-We will be using some terminal commands, so let's make sure you know what they are and what they do! 
+### 🏗️ The Stack
+* Version Control: [Git](https://git-scm.com/)
+* Command Line Interface (CLI): Shell for Unix-like OS
+* Package/Env Management: [uv](https://github.com/astral-sh/uv)
+* Python Notebooks: [Jupyter](https://jupyter.org/)
+* Code Editor: [Cursor](https://github.com/getcursor/cursor) (or VS Code) (Note: Cursor is just a fork of VS Code)
+
+### 🖥️ Operating System Support (start [here](https://github.com/AI-Maker-Space/Interactive-Dev-Environment-for-LLM-Development?tab=readme-ov-file#rocket-lets-get-started))
+* Windows
+* Linux (Debian/Ubuntu)
+* macOS Intel
+* macOS Apple Silicon
+
+<p></p>
+
+## :hammer_and_wrench: Basic Concepts and Code
+
+We will be using a few core tools in our stack such as a `terminal`, `Command Line Interface (CLI)`, `git`, `uv`, and `pip`.
+<details>
+<summary>Terminal and Command Line Interface </summary>
+
+We must use both terminal and a Command Line Interface (CLI) to develop AI applications with open-source tools. This is true regardless of our operating system.
+
+A terminal is a software application like macOS Terminal or Windows Terminal that gives you a window where you type text-based commands and receive text-based output.
+
+A Command Line Interace (CLI) refers to the environment or shell (e.g., Bash, Zsh, PowerShell, etc.) that interprets your text commands. The CLI is the program that actually runs commands and processes input/output; it just happens to run inside a terminal application (or emulator).
+
+Here is a quick review of some terminal commands that you  should make sure you know! It's important to understand both syntax and what they do! 
 
 | Command      | Stands For |  Description |
 | ----------- | ----------- | -------------|
@@ -37,10 +66,8 @@ We will be using some terminal commands, so let's make sure you know what they a
 | `rmdir {dirname}`   | remove directory        | deletes a directory |
 | `ssh {username}@{ip-address} or {hostname}`   | secure shell        | login into a remote Linux machine using SSH |
 
-<p></p>
+</details>
 
-## :hammer_and_wrench: Tools We'll Be Using
-We will also be using a few tools such as `git`, `uv`, and `pip`.
 <details>
 <summary>Git</summary>
 
@@ -192,7 +219,7 @@ Now let's install uv and other tools:
 <p></p>
 
 
-## <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Visual_Studio_Code_0.10.1_icon.png" height=40px/> Let's configure our VS Code (or Cursor) environment!
+## Let's configure our Cursor (or VS Code) environment!
 
 <details>
   <summary>Install the IntelliCode Extension</summary>
