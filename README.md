@@ -14,20 +14,24 @@
 
 🛣️ Welcome to the beginning of your journey to become an AI Engineer! 
 
-This tutorial is designed to guide you through the process of setting up your Interactive Development Environment (IDE) to align with best-practices at [The LLM Edge](https://newsletter.aimakerspace.io/) in 2025!
+This tutorial is designed to guide you through the process of setting up your Interactive Development Environment (IDE) to align with best-practices at [The LLM Edge](https://newsletter.aimakerspace.io/)!
 
 ### 🤖 AI Editors Supported 
-* [Cursor (Recommended for Beginners)](https://github.com/getcursor/cursor)
+* [Cursor (Recommended as best-practice tool)](https://github.com/getcursor/cursor)
 * [Visual Studio Code](https://github.com/microsoft/vscode)
+* 🆚 Watch [🪄 The Wiz walkthrough the key features of Cursor](https://www.youtube.com/live/RNIFvvvETM4?si=fjo1MWJQAq6UqzMt&t=1589) and what makes it different from VS Code)
 
-### 🏗️ The Stack
+Note: [Anysphere's Cursor](https://www.cursor.com/) is a just a fork of VS Code (like [Codeium's Windsurf](https://windsurf.com/) and other competitors). 
+
+
+### 🏗️ The Simplest Stack
 * Version Control: [Git](https://git-scm.com/)
 * Command Line Interface (CLI): Shell for Unix-like OS
 * Package/Env Management: [uv](https://github.com/astral-sh/uv)
 * Python Notebooks: [Jupyter](https://jupyter.org/)
 * Code Editor: [Cursor](https://github.com/getcursor/cursor) (or VS Code) (Note: Cursor is just a fork of VS Code)
 
-### 🖥️ Operating System Support (start [here](https://github.com/AI-Maker-Space/Interactive-Dev-Environment-for-LLM-Development?tab=readme-ov-file#rocket-lets-get-started))
+### 🖥️ Operating Systems Supported (start [here](https://github.com/AI-Maker-Space/Interactive-Dev-Environment-for-LLM-Development?tab=readme-ov-file#rocket-lets-get-started))
 * Windows
 * Linux (Debian/Ubuntu)
 * macOS Intel
@@ -219,14 +223,14 @@ Now let's install uv and other tools:
 <p></p>
 
 
-## Let's configure our Cursor (or VS Code) environment!
+## 🧑‍💻 Let's configure our Cursor (or VS Code) environment!
 
 <details>
   <summary>Install the IntelliCode Extension</summary>
 
   IntelliCode is an AI-powered code completion extension to boost coding productivity. :sunglasses:
 
-  1. Click the `Extensions` <img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/f17d8f45-f174-4b9b-be92-8f1e85d8a77b" width=30px/> tab in the navigation panel on the left side of VS Code (or Cursor). 
+  1. Click the `Extensions` <img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/f17d8f45-f174-4b9b-be92-8f1e85d8a77b" width=30px/> tab in the navigation panel on the left side of Cursor (or VS Code). 
 
   2. Type "IntelliCode" in the search bar.
 
@@ -252,7 +256,7 @@ Now let's install uv and other tools:
 <details>
   <summary>Set the Python Interpreter</summary>
 
-  1. Open VS Code (or Cursor) and click on `New File...`
+  1. Open Cursor (or VS Code) and click on `New File...`
 
   3. Open the Command Pallette 
     <strong>(Mac: </strong></ins> <kbd>Shift</kbd><kbd>⌘</kbd>+<kbd>P</kbd> 
@@ -766,7 +770,7 @@ Then click `Create Repository`.
 
   <summary>Adding a Feature Branch</summary>
 
-  Let's add a feature branch to our local repo.  Earlier, we showed you how to add a feature branch and content to your repo via the Terminal.  This time we are going to show you how to do it using the VS Code (or Cursor) GUI.  
+  Let's add a feature branch to our local repo.  Earlier, we showed you how to add a feature branch and content to your repo via the Terminal.  This time we are going to show you how to do it using the Cursor (or VS Code) GUI.  
   
   1. Click on the `main` <img src="images/vscode_main_branch.png" width=30px/> branch in the lower left side of the screen 
 
@@ -810,7 +814,7 @@ Then click `Create Repository`.
 <details>
   <summary>Hello World! - Part 2 - Notebook Edition</summary>
 
-  1. Create a new file under `app` by clicking on the `Add file` button <img src="images/vscode_add_file.png" width=30px/> and let's name this file `hello_world.ipynb`. The `.ipynb` extension is a notebook extension which will allow you to interact with your code via a notebook in  VS Code (or Cursor), instead of a vanilla Python file. You might need to select your kernel in the top right of the notebook file, if so, choose the one we created previously.
+  1. Create a new file under `app` by clicking on the `Add file` button <img src="images/vscode_add_file.png" width=30px/> and let's name this file `hello_world.ipynb`. The `.ipynb` extension is a notebook extension which will allow you to interact with your code via a notebook in Cursor (or VS Code), instead of a vanilla Python file. You might need to select your kernel in the top right of the notebook file, if so, choose the one we created previously.
   
   2. In the first cell of `hello_world.ipynb` lets do our imports. 
 
@@ -836,7 +840,7 @@ Then click `Create Repository`.
 
   ![coding histogram](images/coding_histogram.jpeg)
 
-  6. Now let's commit our code to our remote repository. This can be done one of two ways - either through the terminal or through VS Code's (or Cursor) GUI. I'll explain the VS Code (or Cursor) way and but you can also choose to use the terminal method by making use of the commands demonstrated earlier.
+  6. Now let's commit our code to our remote repository. This can be done one of two ways - either through the terminal or through Cursor's (or VS Code's) GUI. I'll explain the Cursor (or VS Code) way and but you can also choose to use the terminal method by making use of the commands demonstrated earlier.
     
   * Click `Source Control` <img src="images/vscode_source_control_tab.png" width=30px/>  on the left icon bar.
 
